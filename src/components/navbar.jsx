@@ -1,10 +1,13 @@
 import React from "react";
-import { getNavbarStyles } from "../styles/styles";
+import { getStyles } from "../styles/styles";
+import Header from "./header";
+
 
 
 const Navbar = () => {
-    const styles = getNavbarStyles();
+    const styles = getStyles();
   return (
+    <div>
     <nav style={styles.navbar}>
       <ul style={styles.navbarList}>
         <li style={styles.navbarItem}>
@@ -18,6 +21,10 @@ const Navbar = () => {
         </li>
       </ul>
     </nav>
+     <Header >
+     {/* Contenido del header */}
+   </Header>
+   </div>
   );
 };
 

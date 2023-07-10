@@ -1,4 +1,4 @@
-export function getNavbarStyles() {
+export function getStyles() {
   return {
     navbar: {
       backgroundColor: "#333",
@@ -20,5 +20,12 @@ export function getNavbarStyles() {
       color: "white",
       textDecoration: "none",
     },
+    header:{
+        marginTop: "-200px",
+        backgroundColor:"red",
+        display:"flex",
+        width:'90vw', 
+    }
   };
 }
+

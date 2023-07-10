@@ -1,8 +1,10 @@
 import React from 'react'
+import { getStyles } from '../styles/styles'
 
 const Header = () => {
+    const styles = getStyles()
   return (
-    <div>Header</div>
+    <div style={styles.header}>Header</div>
   )
 }
 
