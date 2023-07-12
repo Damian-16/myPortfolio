@@ -14,7 +14,7 @@ const Navbar = () => {
           <a href="/">Inicio</a>
         </li>
         <li style={styles.navbarItem}>
-          <a href="/portafolio">Portafolio</a>
+          <a href="#portfolio">Portafolio</a>
         </li>
         <li style={styles.navbarItem}>
           <a href="#contact">Contacto</a>

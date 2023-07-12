@@ -30,7 +30,7 @@ export function getStyles() {
       flexDirection: "column",
     },
     cover: {
-      width: "100%",
+      width: "98%",
       borderRadius: 3,
       maxHeight: 400,
     },
@@ -45,6 +45,24 @@ export function getStyles() {
     },
     contentButtons:{
       alignItems: 'center',
-    }
+    },
+    portfolioContainer: {
+      backgroundColor:"blue",
+      width:"100%",
+      flex:1,
+      display:'flex',
+      justifyContent: "center",
+      flexWrap:'wrap'
+    },
+    box:{
+      height:250,
+      width:150,
+      backgroundColor:"white",
+      margin:5
+    },
+    actionsBox:{
+
+    },
+    
   };
 }
