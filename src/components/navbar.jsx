@@ -14,16 +14,16 @@ const Navbar = () => {
           <a href="/">Inicio</a>
         </li>
         <li style={styles.navbarItem}>
-          <a href="/productos">Productos</a>
+          <a href="/portafolio">Portafolio</a>
         </li>
         <li style={styles.navbarItem}>
           <a href="#contact">Contacto</a>
         </li>
       </ul>
     </nav>
-     <Header >
-     {/* Contenido del header */}
-   </Header>
+    <h1>HEY THERE !!!</h1>
+     <Header/> 
+ 
    </div>
   );
 };

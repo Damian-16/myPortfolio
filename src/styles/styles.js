@@ -14,18 +14,37 @@ export function getStyles() {
       padding: 0,
     },
     navbarItem: {
-      marginRight: "10px",
+      marginRight: "5px",
+      marginLeft: "5px",
     },
     navbarLink: {
       color: "white",
       textDecoration: "none",
     },
-    header:{
-        marginTop: "-200px",
-        backgroundColor:"red",
-        display:"flex",
-        width:'90vw', 
+    header: {
+      marginTop: "10%",
+      backgroundColor: "red",
+      justifyContent: "center",
+      width: "95vw",
+
+      flexDirection: "column",
+    },
+    cover: {
+      width: "100%",
+      borderRadius: 3,
+      maxHeight: 400,
+    },
+    about: {
+      display: "flex",
+      justifyContent: "space-between",
+    },
+    avatar:{
+      width:300,
+      height:300,
+      borderRadius:'50%'
+    },
+    contentButtons:{
+      alignItems: 'center',
     }
   };
 }
-
