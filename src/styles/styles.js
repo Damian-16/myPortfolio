@@ -38,31 +38,37 @@ export function getStyles() {
       display: "flex",
       justifyContent: "space-between",
     },
-    avatar:{
-      width:300,
-      height:300,
-      borderRadius:'50%'
+    avatar: {
+      width: 300,
+      height: 300,
+      borderRadius: "50%",
+      aspectRatio:'16/9'
     },
-    contentButtons:{
-      alignItems: 'center',
+    contentButtons: {
+      alignItems: "center",
     },
     portfolioContainer: {
-      backgroundColor:"blue",
-      width:"100%",
-      flex:1,
-      display:'flex',
+      backgroundColor: "blue",
+      width: "100%",
+      flex: 1,
+      display: "flex",
       justifyContent: "center",
-      flexWrap:'wrap'
+      flexWrap: "wrap",
     },
-    box:{
-      height:250,
-      width:150,
-      backgroundColor:"white",
-      margin:5
+    box: {
+      height: 250,
+      width: 150,
+      backgroundColor: "white",
+      margin: 5,
     },
-    actionsBox:{
-
+    actionsBox: {},
+    icons: {
+      width: 30,
+      height: 30,
     },
-    
+    iconsWorks:{
+      justifyContent:'space-around',
+      display:'flex',
+    }
   };
 }

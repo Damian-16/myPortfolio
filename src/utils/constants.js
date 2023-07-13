@@ -35,5 +35,37 @@ export const proyects = [{
     {
         name:'Redux',
         icon:'https://icon-library.com/images/react-icon/react-icon-28.jpg'
+    },
+    {
+      name:'Html',
+      icon:'https://icon-library.com/images/html5-icon/html5-icon-7.jpg'
+    },
+    {
+      name:'Javascript',
+      icon:''
+    },
+    {
+      name:'Css',
+      icon:''
+    },
+    {
+      name:'Angular',
+      icon:''
+    },
+    {
+      name:'Bootstrap',
+      icon:''
+    },
+    {
+      name:'Typescript',
+      icon:''
+    },
+    {
+      name:'MySql',
+      icon:''
+    },
+    {
+      name:'PostgreSql',
+      icon:''
     }
   ]

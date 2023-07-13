@@ -6,7 +6,12 @@ const Portfolio = () => {
   const styles = getStyles();
   const returnIcons = (icons) => {
     const newIcons = techIcons.filter((icon) => icons.includes(icon.name));
-    return newIcons.map((item) => <img key={item.name}src={item.icon} alt={item.name} style={{width:30,height:30}}></img>);
+    return newIcons.map((item) => (
+      <figure key={item.name}>
+        <img src={item.icon} alt={item.name} style={styles.icons}></img>
+        <figcaption>{item.name}</figcaption>
+      </figure>
+    ));
   };
 
   const mapProyects = () => {
