@@ -9,6 +9,7 @@ const HomeView = () => {
   return (
     <>
       <Navbar />
+      
       <Portfolio/>
      
       <Footer/>

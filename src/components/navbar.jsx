@@ -1,6 +1,7 @@
 import React from "react";
-import { getStyles } from "../styles/styles";
+import {  getStyles } from "../styles/styles";
 import Header from "./header";
+import { WhatsappButton } from "../styles/whattsupButton";
 
 
 
@@ -23,7 +24,7 @@ const Navbar = () => {
     </nav>
     <h1>HEY THERE !!!</h1>
      <Header/> 
- 
+     <WhatsappButton/>
    </div>
   );
 };

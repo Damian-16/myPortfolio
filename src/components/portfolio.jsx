@@ -29,7 +29,8 @@ const Portfolio = () => {
     ));
   };
   return (
-    <div id="portfolio" style={styles.portfolioContainer}>
+    <div  style={styles.portfolioContainer}>
+      <h1 id="portfolio" style={{width:'inherit',marginTop:5}}>Portfolio</h1>
       {mapProyects()}
     </div>
   );
