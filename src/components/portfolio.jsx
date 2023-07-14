@@ -16,7 +16,7 @@ const Portfolio = () => {
 
   const mapProyects = () => {
     return proyects.map((item) => (
-      <div key={item.id} style={styles.box}>
+      <styles.Box key={item.id} >
         <h2>{item.title}</h2>
         <img></img>
         <p>{item.description}</p>
@@ -25,7 +25,7 @@ const Portfolio = () => {
           <button>1</button>
           <button>2</button>
         </div>
-      </div>
+      </styles.Box>
     ));
   };
   return (

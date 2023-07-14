@@ -14,6 +14,21 @@ export function getStyles() {
     
   }
 `;
+const Box = styled.div`
+height: 450px;
+width: 40vw;
+min-width: 400px;
+background-color: white;
+margin: 5px;
+transition: transform 0.3s, box-shadow 0.3s;
+border-radius: 5px;
+
+
+&:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #00FF00;
+}
+`;
   return {
     navbar: {
       backgroundColor: "#333",
@@ -106,13 +121,7 @@ export function getStyles() {
       justifyContent: "center",
       flexWrap: "wrap",
     },
-    box: {
-      height: 450,
-      width: '50vw',
-      minWidth:400,
-      backgroundColor: "white",
-      margin: 5,
-    },
+   Box,
     actionsBox: {
       display: 'flex',
       justifyContent: 'center',
