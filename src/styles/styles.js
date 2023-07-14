@@ -81,10 +81,10 @@ border-radius: 5px;
     },
     wspButton: {
       position: "fixed",
-      bottom: "20px", /* Ajusta la posición vertical según tus necesidades */
-      right: "20px", /* Ajusta la posición horizontal según tus necesidades */
-      zIndex: 9999, /* Asegura que el botón esté por encima de otros elementos */
-      backgroundColor: "#25D366",
+      bottom: "20px", 
+      right: "20px", 
+      zIndex: 9999, 
+      //backgroundColor: "#25D366",
       color: "white",
       fontSize: "16px",
       padding: "12px 24px",
@@ -97,6 +97,10 @@ border-radius: 5px;
       animationName: "bounce",
       animationDuration: "0.5s",
       animationIterationCount: "infinite",
+      background: "url(https://icon-library.com/images/whatsapp-png-icon/whatsapp-png-icon-9.jpg) no-repeat center center / cover",
+      backgroundSize: "cover",
+      height: "40px",
+      width: "40px",
 
       "@media (max-width: 480px)": {
         fontSize: "14px",
