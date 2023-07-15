@@ -1,10 +1,14 @@
-import React from 'react'
-import { getStyles } from '../styles/styles'
+import React, { useState } from 'react'
+import {  getStyles } from '../styles/styles'
 import avatarImage from '../assets/img/avatar.jpg';
 
 
-const Header = () => {
+const Header = ({language,setLanguage,text}) => {
+ 
+  //  const [language, setLanguage] = useState()
+  
     const styles = getStyles()
+    
     
   return (
     <header style={styles.header}>
@@ -12,10 +16,10 @@ const Header = () => {
       <div style={styles.about}>
         <img style={styles.avatar} src={avatarImage} alt='profile' />
         <styles.aboutText>
-          Hello, my name is Damian Pinedo Morganti and I am a software engineer with over 2+ years of
+         {text.aboutText}
         </styles.aboutText>
         <div style={styles.contentButtons}>
-          <button>buton</button>
+          <button onClick={()=>setLanguage(!language)}>buton</button>
           <button>buton</button>
         </div>
         </div>    

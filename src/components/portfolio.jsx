@@ -2,7 +2,7 @@ import React from "react";
 import { getStyles } from "../styles/styles";
 import { proyects, techIcons } from "../utils/constants";
 
-const Portfolio = () => {
+const Portfolio = ({text}) => {
   const styles = getStyles();
   const returnIcons = (icons) => {
     const newIcons = techIcons.filter((icon) => icons.includes(icon.name));
@@ -30,7 +30,7 @@ const Portfolio = () => {
   };
   return (
     <div  style={styles.portfolioContainer}>
-      <h1 id="portfolio" style={{width:'inherit',marginTop:5}}>Portfolio</h1>
+      <h1 id="portfolio" style={{width:'inherit',marginTop:5}}>{text.title}</h1>
       {mapProyects()}
     </div>
   );

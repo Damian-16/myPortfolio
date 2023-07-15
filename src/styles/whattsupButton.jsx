@@ -8,7 +8,7 @@ export const WhatsappButton = () => {
 
     const animatedStyles = useSpring({
       from: { transform: isZoomed ?'scale(1.3)':'scale(1)' },
-      to: { transform: isZoomed ? 'scale(1.3)' : 'scale(1)' },
+      to: { transform: isZoomed ? 'scale(1.4)' : 'scale(1.2)' },
       config: { duration: 1000 },
       loop: true,
     });

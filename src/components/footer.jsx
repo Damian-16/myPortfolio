@@ -1,11 +1,11 @@
 import React from "react";
 import { getStyles } from "../styles/styles";
 
-const Footer = () => {
+const Footer = ({text}) => {
   const styles = getStyles();
   return (
     <div id="contact">
-      <h1>Contact Me</h1>
+      <h1>{text.title2}</h1>
 
       <div style={styles.iconsWorks}>
         <img
@@ -30,6 +30,7 @@ const Footer = () => {
           style={styles.icons}
         ></img>
       </div>
+      <p>Copyright ©{new Date().getFullYear()}</p>
     </div>
   );
 };

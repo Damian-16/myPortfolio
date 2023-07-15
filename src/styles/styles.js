@@ -1,11 +1,10 @@
 import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
 
-
 export function getStyles() {
   const slidein = keyframes`
   from {
-    margin-left: 100%;
+    margin-left: 50%;
     width: 300%;
   }
 
@@ -14,21 +13,20 @@ export function getStyles() {
     
   }
 `;
-const Box = styled.div`
-height: 450px;
-width: 40vw;
-min-width: 400px;
-background-color: white;
-margin: 5px;
-transition: transform 0.3s, box-shadow 0.3s;
-border-radius: 5px;
+  const Box = styled.div`
+    height: 450px;
+    width: 40vw;
+    min-width: 400px;
+    background-color: white;
+    margin: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 5px;
 
-
-&:hover {
-  transform: scale(1.2);
-  box-shadow: 0 0 10px #00FF00;
-}
-`;
+    &:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 10px #00ff00;
+    }
+  `;
   return {
     navbar: {
       backgroundColor: "#333",
@@ -59,6 +57,9 @@ border-radius: 5px;
 
       flexDirection: "column",
     },
+    headerTitle:{
+    textAlign: "left",
+    },
     cover: {
       width: "98%",
       borderRadius: 3,
@@ -69,21 +70,21 @@ border-radius: 5px;
       justifyContent: "space-between",
     },
     aboutText: styled.p`
-    animation-duration: 3s;
-    animation-name: ${slidein};
-  `,
-   
+      animation-duration: 3s;
+      animation-name: ${slidein};
+    `,
+
     avatar: {
       width: 300,
       height: 300,
       borderRadius: "50%",
-      aspectRatio:'16/9'
+      aspectRatio: "16/9",
     },
     wspButton: {
       position: "fixed",
-      bottom: "20px", 
-      right: "20px", 
-      zIndex: 9999, 
+      bottom: "20px",
+      right: "20px",
+      zIndex: 9999,
       //backgroundColor: "#25D366",
       color: "white",
       fontSize: "16px",
@@ -97,7 +98,8 @@ border-radius: 5px;
       animationName: "bounce",
       animationDuration: "0.5s",
       animationIterationCount: "infinite",
-      background: "url(https://icon-library.com/images/whatsapp-png-icon/whatsapp-png-icon-9.jpg) no-repeat center center / cover",
+      background:
+        "url(https://icon-library.com/images/whatsapp-png-icon/whatsapp-png-icon-9.jpg) no-repeat center center / cover",
       backgroundSize: "cover",
       height: "40px",
       width: "40px",
@@ -110,10 +112,8 @@ border-radius: 5px;
       "&:hover": {
         backgroundColor: "#128C7E",
       },
-     
     },
-  
-   
+
     contentButtons: {
       alignItems: "center",
     },
@@ -125,19 +125,37 @@ border-radius: 5px;
       justifyContent: "center",
       flexWrap: "wrap",
     },
-   Box,
+    Box,
     actionsBox: {
-      display: 'flex',
-      justifyContent: 'center',
+      display: "flex",
+      justifyContent: "center",
     },
     icons: {
       width: 30,
       height: 30,
     },
-    iconsWorks:{
-      justifyContent:'space-around',
-      display:'flex',
-    }
+    iconsWorks: {
+      justifyContent: "space-around",
+      display: "flex",
+    },
   };
 }
 
+export function dynamicText(params) {
+  if (!params) {
+    return {
+      aboutText: "Hola soy Damian",
+      intro:"Hola a todos! ",
+      title:'Portafolio',
+      title2:'Contactame',
+    };
+  } else {
+    return {
+      aboutText: "Hi Im Damian",
+      intro:"HEY THERE",
+      title:'Portfolio',
+      title2:'Contact Me',
+  
+    };
+  }
+}
