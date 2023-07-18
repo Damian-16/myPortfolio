@@ -59,6 +59,7 @@ export function getStyles() {
     },
     headerTitle:{
     textAlign: "left",
+    marginTop: "5%",
     },
     cover: {
       width: "98%",

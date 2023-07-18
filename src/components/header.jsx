@@ -3,11 +3,14 @@ import {  getStyles } from '../styles/styles'
 import avatarImage from '../assets/img/avatar.jpg';
 
 
-const Header = ({language,setLanguage,text}) => {
+const Header = ({language,setLanguage,text,darkMode,toggleDarkMode}) => {
  
   //  const [language, setLanguage] = useState()
   
     const styles = getStyles()
+    const handleToggleDarkMode = () => {
+      toggleDarkMode();
+    };
     
     
   return (
@@ -20,7 +23,7 @@ const Header = ({language,setLanguage,text}) => {
         </styles.aboutText>
         <div style={styles.contentButtons}>
           <button onClick={()=>setLanguage(!language)}>buton</button>
-          <button>buton</button>
+          <button onClick={handleToggleDarkMode}>buton</button>
         </div>
         </div>    
     </header>

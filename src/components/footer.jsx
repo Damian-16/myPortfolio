@@ -30,7 +30,7 @@ const Footer = ({text}) => {
           style={styles.icons}
         ></img>
       </div>
-      <p>Copyright ©{new Date().getFullYear()}</p>
+      <p>Copyright © Website created by Damian Pinedo Morganti{new Date().getFullYear()}</p>
     </div>
   );
 };
