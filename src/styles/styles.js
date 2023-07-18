@@ -13,6 +13,7 @@ export function getStyles() {
     
   }
 `;
+ 
   const Box = styled.div`
     height: 450px;
     width: 40vw;
@@ -51,15 +52,15 @@ export function getStyles() {
     },
     header: {
       marginTop: "10%",
-      backgroundColor: "red",
+
       justifyContent: "center",
       width: "95vw",
 
       flexDirection: "column",
     },
-    headerTitle:{
-    textAlign: "left",
-    marginTop: "8%",
+    headerTitle: {
+      textAlign: "left",
+      marginTop: "8%",
     },
     cover: {
       width: "98%",
@@ -117,7 +118,11 @@ export function getStyles() {
 
     contentButtons: {
       alignItems: "center",
+      zIndex: 1,
+      userSelect: "none",
     },
+
+
     portfolioContainer: {
       backgroundColor: "blue",
       width: "100%",
@@ -127,6 +132,7 @@ export function getStyles() {
       flexWrap: "wrap",
     },
     Box,
+  
     actionsBox: {
       display: "flex",
       justifyContent: "center",
@@ -146,17 +152,16 @@ export function dynamicText(params) {
   if (!params) {
     return {
       aboutText: "Hola soy Damian",
-      intro:"Hola a todos! ",
-      title:'Portafolio',
-      title2:'Contactame',
+      intro: "Hola a todos! ",
+      title: "Portafolio",
+      title2: "Contactame",
     };
   } else {
     return {
       aboutText: "Hi Im Damian",
-      intro:"HEY THERE",
-      title:'Portfolio',
-      title2:'Contact Me',
-  
+      intro: "HEY THERE",
+      title: "Portfolio",
+      title2: "Contact Me",
     };
   }
 }

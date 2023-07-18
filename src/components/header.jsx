@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {  getStyles } from '../styles/styles'
 import avatarImage from '../assets/img/avatar.jpg';
+import { DynamicButton } from '../styles/dynamicButton';
 
 
 
@@ -20,7 +21,12 @@ const Header = ({language,setLanguage,text}) => {
          {text.aboutText}
         </styles.aboutText>
         <div style={styles.contentButtons}>
-          <button onClick={()=>setLanguage(!language)}>buton</button>
+          <DynamicButton onClick={()=>setLanguage(!language)}>
+            <span className="dblFirst"></span>
+            <span className='dblSecond'></span>
+            <span className='dblThird'></span>
+            <span className='dblFourth'></span>
+            buton</DynamicButton>
          
         </div>
         </div>    

@@ -23,7 +23,7 @@ const HomeView = () => {
     margin: 0,
     padding: 0,
     alignItems: 'center',
-    
+    alignText: 'center',
     maxWidth:'100vw'
   };
 
