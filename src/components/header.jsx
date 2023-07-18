@@ -26,7 +26,7 @@ const Header = ({language,setLanguage,text}) => {
             <span className='dblSecond'></span>
             <span className='dblThird'></span>
             <span className='dblFourth'></span>
-            buton</DynamicButton>
+            {text.changeLng}</DynamicButton>
          
         </div>
         </div>    

@@ -44,7 +44,7 @@ position: relative;
   transition: 0.5s;
   letter-spacing: 4px;
   cursor: pointer;
-/* Agrega la animación al elemento span con la clase .dblFirst */
+
 & > span.dblFirst {
   content: "";
   position: absolute;

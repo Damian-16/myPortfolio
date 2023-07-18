@@ -124,7 +124,6 @@ export function getStyles() {
 
 
     portfolioContainer: {
-      backgroundColor: "blue",
       width: "100%",
       flex: 1,
       display: "flex",
@@ -151,17 +150,21 @@ export function getStyles() {
 export function dynamicText(params) {
   if (!params) {
     return {
+      init:"Inicio",
       aboutText: "Hola soy Damian",
       intro: "Hola a todos! ",
       title: "Portafolio",
       title2: "Contactame",
+      changeLng:"Cambiar a Inglés"
     };
   } else {
     return {
+      init:"Start",
       aboutText: "Hi Im Damian",
       intro: "HEY THERE",
       title: "Portfolio",
       title2: "Contact Me",
+      changeLng:"Change to Spanish"
     };
   }
 }

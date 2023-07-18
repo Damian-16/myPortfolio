@@ -15,13 +15,13 @@ const Navbar = ({ language, setLanguage, text, darkMode, toggleDarkMode }) => {
       <nav style={styles.navbar}>
         <ul style={styles.navbarList}>
           <li style={styles.navbarItem}>
-            <a href="/">Inicio</a>
+            <a href="/">{text.init}</a>
           </li>
           <li style={styles.navbarItem}>
             <a href="#portfolio">{text.title}</a>
           </li>
           <li style={styles.navbarItem}>
-            <a href="#contact">Contacto</a>
+            <a href="#contact">{text.title2}</a>
           </li>
         </ul>
       </nav>
