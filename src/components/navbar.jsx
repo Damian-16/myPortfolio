@@ -2,9 +2,14 @@ import React from "react";
 import { getStyles } from "../styles/styles";
 import Header from "./header";
 import { WhatsappButton } from "../styles/whattsupButton";
+import { DarkModeSwitch } from "react-toggle-dark-mode";
 
 const Navbar = ({ language, setLanguage, text, darkMode, toggleDarkMode }) => {
   const styles = getStyles();
+  const handleToggleDarkMode = () => {
+    toggleDarkMode();
+  };
+  
   return (
     <div>
       <nav style={styles.navbar}>
@@ -20,7 +25,15 @@ const Navbar = ({ language, setLanguage, text, darkMode, toggleDarkMode }) => {
           </li>
         </ul>
       </nav>
-      <h1 style={styles.headerTitle}>{text.intro}</h1>
+      <div style={{display:'flex',justifyContent:'space-between'}}>
+      <h1 style={styles.headerTitle}>{text.intro}</h1>{" "}
+      <DarkModeSwitch
+        style={{marginTop:'8%'}}
+        checked={darkMode}
+        onChange={handleToggleDarkMode}
+        size={90}
+      />
+      </div>
       <Header
         darkMode={darkMode}
         toggleDarkMode={toggleDarkMode}
