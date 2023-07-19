@@ -42,7 +42,6 @@ position: relative;
   text-transform: uppercase;
   overflow: hidden;
   transition: 0.5s;
-  letter-spacing: 4px;
   cursor: pointer;
 
 & > span.dblFirst {
