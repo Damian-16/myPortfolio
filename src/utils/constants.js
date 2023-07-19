@@ -6,7 +6,7 @@ export const proyects = [{
     descriptionEn:' a tracking app okeyyy',
     techStack: ['React','Redux','Typescript','MySql'],
     gitHubLink: '',
-    demoLink: '',
+    demoLink: 'http://deliverytracker.softsytech.com/home',
     
   },
   { id:2,
@@ -25,8 +25,28 @@ export const proyects = [{
     description: 'Una aplicacion de Búsqueda con Inicio de sesion ,Perfil personalizable y conexion con Base de Datos',
     descriptionEn:'A search App with Login ,customizable profile and database conection',
     techStack:['React','Redux','Firebase'] ,
-    gitHubLink: '',
-    demoLink: '',
+    gitHubLink: 'https://github.com/Damian-16/AprendiendoRedux',
+    demoLink: 'https://649b735f8fc10a0b4b73db40--pokedexwithredux.netlify.app/login',
+   
+  },
+  { id:4,
+    title: 'PikaGame',
+    previewImg:'src/assets/img/proyects/Pikagame.png',
+    description: 'Un pequeño juego hecho con Animaciones Css y Lógica con Js',
+    descriptionEn:'A little game made with Css Animations and Js logic',
+    techStack:['Javascript','Html','Css'] ,
+    gitHubLink: 'https://github.com/Damian-16/CssGrid',
+    demoLink: 'https://damian-16.github.io/CssGrid/contexto-de-apilamiento.html',
+   
+  },
+{   id:5,
+    title: 'PikaGame',
+    previewImg:'src/assets/img/proyects/Pikagame.png',
+    description: 'Una aplicacion de Búsqueda con Inicio de sesion ,Perfil personalizable y conexion con Base de Datos',
+    descriptionEn:'A search App with Login ,customizable profile and database conection',
+    techStack:['Javascript','Html','Css'] ,
+    gitHubLink: 'https://github.com/Damian-16/CssGrid',
+    demoLink: 'https://damian-16.github.io/CssGrid/contexto-de-apilamiento.html',
    
   }];
 
@@ -76,3 +96,7 @@ export const proyects = [{
       icon:'https://icon-library.com/images/65813-google-computer-icons-github-firebase-angularjs-messaging.png'
     }
   ]
+
+  export const linksRedirect = (url) => {
+    window.open(url,"_blank")
+   }

@@ -30,7 +30,7 @@ export function getStyles() {
   `;
   return {
     navbar: {
-      backgroundColor: "#333",
+      // backgroundColor: "#333",
       color: "white",
       position: "fixed",
       top: 0,
@@ -139,10 +139,12 @@ export function getStyles() {
     icons: {
       width: 30,
       height: 30,
+      cursor: "pointer",
     },
     iconsWorks: {
       justifyContent: "space-around",
       display: "flex",
+      marginBottom: 25,
     },
   };
 }

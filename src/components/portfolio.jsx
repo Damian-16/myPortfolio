@@ -1,6 +1,6 @@
 import React from "react";
 import { getStyles } from "../styles/styles";
-import { proyects, techIcons } from "../utils/constants";
+import { linksRedirect, proyects, techIcons } from "../utils/constants";
 
 const Portfolio = ({text,language}) => {
   const styles = getStyles();
@@ -13,6 +13,7 @@ const Portfolio = ({text,language}) => {
       </figure>
     ));
   };
+ 
 
   const mapProyects = () => {
     return proyects.map((item) => (
@@ -24,11 +25,12 @@ const Portfolio = ({text,language}) => {
           {returnIcons(item.techStack)}
          
         </div>
-        <button>Github</button>
-          <button>Demo</button>
+        <button style={{margin:8}} onClick={()=>linksRedirect(item.gitHubLink)}>Github</button>
+        <button onClick={()=>linksRedirect(item.demoLink)}>Demo</button>
       </styles.Box>
     ));
   };
+  
   return (
     <div  style={styles.portfolioContainer}>
       <h1 id="portfolio" style={{width:'inherit',marginTop:5}}>{text.title}</h1>
