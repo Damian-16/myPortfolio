@@ -2,7 +2,7 @@ import React from "react";
 import { getStyles } from "../styles/styles";
 import { proyects, techIcons } from "../utils/constants";
 
-const Portfolio = ({text}) => {
+const Portfolio = ({text,language}) => {
   const styles = getStyles();
   const returnIcons = (icons) => {
     const newIcons = techIcons.filter((icon) => icons.includes(icon.name));
@@ -18,13 +18,14 @@ const Portfolio = ({text}) => {
     return proyects.map((item) => (
       <styles.Box key={item.id} >
         <h2>{item.title}</h2>
-        <img></img>
-        <p>{item.description}</p>
+        <img src={item.previewImg} style={{height:200,width:'90%'}} />
+        <p>{!language?item.description:item.descriptionEn}</p>
         <div style={styles.actionsBox}>
           {returnIcons(item.techStack)}
-          <button>1</button>
-          <button>2</button>
+         
         </div>
+        <button>Github</button>
+          <button>Demo</button>
       </styles.Box>
     ));
   };

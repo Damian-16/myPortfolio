@@ -15,10 +15,10 @@ export function getStyles() {
 `;
  
   const Box = styled.div`
-    height: 450px;
-    width: 40vw;
+    height: 550px;
+    width: 45vw;
     min-width: 400px;
-    background-color: white;
+    background-color: transparent;
     margin: 5px;
     transition: transform 0.3s, box-shadow 0.3s;
     border-radius: 5px;

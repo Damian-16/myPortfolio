@@ -1,9 +1,10 @@
 export const proyects = [{
     id:1,
-    title: 'Portfolio',
-    previewImg:'',
-    description: 'portflio1',
-    techStack: '',
+    title: 'Delivery Tracker',
+    previewImg:'src/assets/img/proyects/DeliveryTrackerImg.png',
+    description: 'una aplicacion de rastreo',
+    descriptionEn:' a tracking app okeyyy',
+    techStack: ['React','Redux','Typescript','MySql'],
     gitHubLink: '',
     demoLink: '',
     
@@ -12,16 +13,18 @@ export const proyects = [{
     title: 'Portfolio',
     previewImg:'',
     description: '',
+    descriptionEn:'',
     techStack: ['React','Redux'],
     gitHubLink: '',
     demoLink: '',
     
   },
   { id:3,
-    title: 'Portfolio',
-    previewImg:'',
-    description: '',
-    techStack: '',
+    title: 'Pokedex',
+    previewImg:'src/assets/img/proyects/Pokedex.png',
+    description: 'Una aplicacion de Búsqueda con Inicio de sesion ,Perfil personalizable y conexion con Base de Datos',
+    descriptionEn:'A search App with Login ,customizable profile and database conection',
+    techStack:['React','Redux','Firebase'] ,
     gitHubLink: '',
     demoLink: '',
    
@@ -42,30 +45,34 @@ export const proyects = [{
     },
     {
       name:'Javascript',
-      icon:''
+      icon:'https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg'
     },
     {
       name:'Css',
-      icon:''
+      icon:'https://icon-library.com/images/css3-icon/css3-icon-28.jpg'
     },
     {
       name:'Angular',
-      icon:''
+      icon:'https://icon-library.com/images/angularjs-icon/angularjs-icon-10.jpg'
     },
     {
       name:'Bootstrap',
-      icon:''
+      icon:'https://icon-library.com/images/bootstrap-icon-png/bootstrap-icon-png-10.jpg'
     },
     {
       name:'Typescript',
-      icon:''
+      icon:'https://icon-library.com/images/mit-icon/mit-icon-25.jpg'
     },
     {
       name:'MySql',
-      icon:''
+      icon:'https://icon-library.com/images/a2757b299d_45223.png'
     },
     {
       name:'PostgreSql',
-      icon:''
+      icon:'https://icon-library.com/images/postgresql-icon/postgresql-icon-7.jpg'
+    },
+    {
+      name:'Firebase',
+      icon:'https://icon-library.com/images/65813-google-computer-icons-github-firebase-angularjs-messaging.png'
     }
   ]
