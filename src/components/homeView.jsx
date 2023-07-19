@@ -16,7 +16,9 @@ const HomeView = () => {
   };
   const appStyles = {
     
-    backgroundColor: darkMode ? "#333" : "white",
+   // backgroundColor: darkMode ? "#333" : "white",
+    background:darkMode ? "#333" :'rgb(219,227,199)',
+    backgroundImage: !darkMode &&'linear-gradient(90deg, rgba(219,227,199,1) 14%, rgba(251,254,246,1) 100%)',    
     color: darkMode ? "white" : "black",
     display: 'flex',
     flexDirection: 'column',

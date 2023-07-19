@@ -35,7 +35,8 @@ const btn4 = keyframes`
 }
 `
 export const DynamicButton = styled.button`
-position: relative;
+  position: relative;
+  background: transparent;
   padding: 10px 20px;
   color: #11aec6;
   font-size: 16px;
