@@ -1,3 +1,6 @@
+import { toast } from "react-hot-toast";
+import { dynamicText } from "../styles/styles";
+
 export const proyects = [{
     id:1,
     title: 'Delivery Tracker',
@@ -5,18 +8,18 @@ export const proyects = [{
     description: 'una aplicacion de rastreo',
     descriptionEn:' a tracking app okeyyy',
     techStack: ['React','Redux','Typescript','MySql'],
-    gitHubLink: '',
+    gitHubLink: null,
     demoLink: 'http://deliverytracker.softsytech.com/home',
     
   },
   { id:2,
-    title: 'Portfolio',
-    previewImg:'',
+    title: 'Batatabit Page',
+    previewImg:'src/assets/img/proyects/Batatabit.jpg',
     description: '',
     descriptionEn:'',
-    techStack: ['React','Redux'],
-    gitHubLink: '',
-    demoLink: '',
+    techStack: ['Html','Javascript','Css'],
+    gitHubLink: 'https://github.com/Damian-16/MobileFirst',
+    demoLink: 'https://damian-16.github.io/MobileFirst/',
     
   },
   { id:3,
@@ -40,13 +43,13 @@ export const proyects = [{
    
   },
 {   id:5,
-    title: 'PikaGame',
-    previewImg:'src/assets/img/proyects/Pikagame.png',
-    description: 'Una aplicacion de Búsqueda con Inicio de sesion ,Perfil personalizable y conexion con Base de Datos',
-    descriptionEn:'A search App with Login ,customizable profile and database conection',
-    techStack:['Javascript','Html','Css'] ,
-    gitHubLink: 'https://github.com/Damian-16/CssGrid',
-    demoLink: 'https://damian-16.github.io/CssGrid/contexto-de-apilamiento.html',
+    title: 'Yard Store',
+    previewImg:'src/assets/img/proyects/YardStore.png',
+    description: 'Una Tienda virtual con funcionalidad de agregar o quitar Productos de un carrito virtual, Host configurado con Firebase',
+    descriptionEn:'A Virtual Store with functionality to add or remove Products from a virtual cart, Host configured with Firebase',
+    techStack:['Angular','Typescript','Firebase'] ,
+    gitHubLink: 'https://github.com/Damian-16/my-store-angular',
+    demoLink: 'https://yarnstore-62ab6.web.app',
    
   }];
 
@@ -97,6 +100,8 @@ export const proyects = [{
     }
   ]
 
-  export const linksRedirect = (url) => {
+  export const linksRedirect = (url,msg) => {
+     const lng = dynamicText(msg)
+    !url? toast.error(lng.toastErr):
     window.open(url,"_blank")
    }

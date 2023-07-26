@@ -17,7 +17,7 @@ export function getStyles() {
   const Box = styled.div`
     height: 550px;
     width: 45vw;
-    min-width: 400px;
+    min-width: 600px;
     background-color: transparent;
     margin: 5px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -70,10 +70,19 @@ export function getStyles() {
     about: {
       display: "flex",
       justifyContent: "space-between",
+      
+      
+    },
+    aboutMobile: {
+      display: "flex",
+      flexWrap: "wrap",
+    
     },
     aboutText: styled.p`
       animation-duration: 3s;
       animation-name: ${slidein};
+      white-space: pre-line;
+      text-align: start;
     `,
 
     avatar: {
@@ -81,6 +90,7 @@ export function getStyles() {
       height: 300,
       borderRadius: "50%",
       aspectRatio: "16/9",
+      marginRight: "5%"
     },
     wspButton: {
       position: "fixed",
@@ -106,7 +116,7 @@ export function getStyles() {
       height: "40px",
       width: "40px",
 
-      "@media (max-width: 480px)": {
+      "@media (maxWidth: 480px)": {
         fontSize: "14px",
         padding: "10px 20px",
       },
@@ -153,11 +163,12 @@ export function dynamicText(params) {
   if (!params) {
     return {
       init:"Inicio",
-      aboutText: "Hola soy Damian",
-      intro: "Hola a todos! ",
+      aboutText:"¡Hola! Soy Damián, un apasionado desarrollador de frontend con más de 2 años de experiencia en el fascinante mundo de la tecnología.\nMi sed de conocimiento y mi amor por aprender me han llevado a expandir mis habilidades y aspirar a ser un desarrollador fullstack.\nÚltimamente, me he dedicado a ampliar mi conjunto de habilidades para abarcar no solo el frontend, sino también la creación de aplicaciones completas y funcionales en todas sus capas.\nEn mi viaje como desarrollador, he aprendido que cada línea de código es una oportunidad para mejorar la vida de las personas a través de soluciones innovadoras y creativas. Siempre estoy buscando nuevos desafíos y oportunidades para hacer crecer mis habilidades y seguir construyendo experiencias sorprendentes para los usuarios.\nBienvenido a mi portafolio, donde podrás explorar algunos de mis proyectos y conocer más sobre mi trabajo y trayectoria como desarrollador. ¡Espero que disfrutes tu visita y no dudes en contactarme si quieres hablar sobre proyectos emocionantes o colaboraciones inspiradoras",
+      intro: "Hola a todos!",
       title: "Portafolio",
       title2: "Contactame",
-      changeLng:"Cambiar a Inglés"
+      changeLng:"Cambiar a Inglés",
+      toastErr:"Este Repositorio se Encuentra en Privado actualmente"
     };
   } else {
     return {
@@ -166,7 +177,8 @@ export function dynamicText(params) {
       intro: "HEY THERE",
       title: "Portfolio",
       title2: "Contact Me",
-      changeLng:"Change to Spanish"
+      changeLng:"Change to Spanish",
+      toastErr:"This Repository is currently in Private Mode"
     };
   }
 }

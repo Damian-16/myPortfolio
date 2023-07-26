@@ -31,11 +31,11 @@ const Portfolio = ({ text, language,darkMode }) => {
         <div style={styles.actionsBox}>{returnIcons(item.techStack)}</div>
         <button
           style={{ margin: 8 }}
-          onClick={() => linksRedirect(item.gitHubLink)}
+          onClick={() => linksRedirect(item.gitHubLink,language)}
         >
           Github
         </button>
-        <button onClick={() => linksRedirect(item.demoLink)}>Demo</button>
+        <button onClick={() => linksRedirect(item.demoLink,language)}>Demo</button>
       </styles.Box>
     ));
   };

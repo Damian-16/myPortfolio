@@ -4,6 +4,7 @@ import Navbar from "./navbar";
 import Footer from "./footer";
 import Portfolio from "./portfolio";
 import { dynamicText } from "../styles/styles";
+import { Toaster } from "react-hot-toast";
 
 const HomeView = () => {
   const [language, setLanguage] = useState();
@@ -38,6 +39,7 @@ const HomeView = () => {
         setLanguage={setLanguage}
         text={text}
       />
+     <Toaster/>
 
       <Portfolio language={language} darkMode={darkMode} text={text} />
 
