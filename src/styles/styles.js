@@ -173,7 +173,7 @@ export function dynamicText(params) {
   } else {
     return {
       init:"Start",
-      aboutText: "Hi Im Damian",
+      aboutText: "Hi! I'm Damián, a passionate frontend developer with more than 2 years of experience in the fascinating world of technology.\nMy thirst for knowledge and my love for learning have led me to expand my skills and aspire to be a fullstack developer.\nLately , he dedicated me to expanding my skill set to encompass not only the frontend, but also building complete and functional applications in all its layers.\nIn my journey as a developer, I learned that each line of code is an opportunity to improve life of people through innovative and creative solutions. I'm always looking for new challenges and opportunities to grow my skills and keep building amazing user experiences.\nWelcome to my portfolio, where you can explore some of my projects and learn more about my work and journey as a developer. I hope you enjoy your visit and don't hesitate to contact me if you want to talk about exciting projects or inspiring collaborations!",
       intro: "HEY THERE",
       title: "Portfolio",
       title2: "Contact Me",
