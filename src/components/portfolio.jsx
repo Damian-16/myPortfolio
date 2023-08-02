@@ -21,7 +21,7 @@ const Portfolio = ({ text, language,darkMode }) => {
           background:darkMode? "rgb(2,0,36)":"rgb(224,231,207)",
           backgroundImage:darkMode?
             "radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,0,7,1) 35%, rgba(12,60,69,1) 100%)":
-            "radial-gradient(circle, rgba(224,231,207,1) 6%, rgba(252,255,243,1) 46%, rgba(180,202,144,1) 100%)",
+            "radial-gradient(circle, rgba(224,231,207,1) 6%, rgba(252,255,243,1) 46%, rgb(111, 220, 191) 200%)",
         }}
         key={item.id}
       >

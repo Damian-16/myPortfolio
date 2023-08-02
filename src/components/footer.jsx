@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useRef } from "react";
 import { getStyles } from "../styles/styles";
 import { linksRedirect } from "../utils/constants";
+import emailjs from '@emailjs/browser';
+import { publicKey, serviceID, templateID } from "../privateNumber";
 
 const Footer = ({text}) => {
   const styles = getStyles();
@@ -9,6 +11,19 @@ const Footer = ({text}) => {
     window.location.href = params === 'g'?'mailto:damianmorganti16@gmail.com':'mailto:DamianMorganti16@hotmail.com'
 
   };
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(serviceID, templateID, form.current, publicKey)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
     <div id="contact">
       <h1>{text.title2}</h1>
@@ -38,6 +53,16 @@ const Footer = ({text}) => {
           style={styles.icons}
           onClick={()=>sendMail('m')}
         ></img>
+
+<form ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <button type="submit">Enviar</button>
+    </form>
       </div>
       <p>Copyright © Website created by Damian Pinedo Morganti{new Date().getFullYear()}</p>
     </div>

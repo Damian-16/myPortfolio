@@ -1,10 +1,15 @@
 import { toast } from "react-hot-toast";
 import { dynamicText } from "../styles/styles";
+import deliveryTrackerimg from '../assets/img/DeliveryTrackerImg.png'
+import batatabit from '../assets/img/Batatabit.jpg'
+import dex from '../assets/img/Pokedex.jpg'
+import pika from '../assets/img/Pikagame.png'
+import yard from '../assets/img/YardStore.png'
 
 export const proyects = [{
     id:1,
     title: 'Delivery Tracker',
-    previewImg:'src/assets/img/proyects/DeliveryTrackerImg.png',
+    previewImg:deliveryTrackerimg,
     description: 'Una aplicación de Rastreo y Delivery de Una aplicación de Rastreo y Delivery de productos, actualmente en producción, que brinda a los usuarios la posibilidad de realizar seguimiento de sus pedidos y disfrutar del servicio de entrega de productos. ,Actualmente en producción , por motivos de Mantenimientos del Servidor en este momento no se encuentra funcionando',
     descriptionEn:'A Tracking and Delivery application for A Tracking and Delivery application for products, currently in production, which gives users the ability to track their orders and enjoy product delivery service,Currently in production, for reasons of Server Maintenance at this time it is not working',
     techStack: ['React','Redux','Typescript','MySql'],
@@ -13,8 +18,18 @@ export const proyects = [{
     
   },
   { id:2,
+    title: 'Yard Store',
+    previewImg:yard,
+    description: 'Una Tienda virtual con funcionalidad de agregar o quitar Productos de un carrito virtual, Host configurado con Firebase',
+    descriptionEn:'A Virtual Store with functionality to add or remove Products from a virtual cart,\nHost configured with Firebase',
+    techStack:['Angular','Typescript','Firebase'] ,
+    gitHubLink: 'https://github.com/Damian-16/my-store-angular',
+    demoLink: 'https://yarnstore-62ab6.web.app',
+   
+  },
+  { id:3,
     title: 'Batatabit Page',
-    previewImg:'src/assets/img/proyects/Batatabit.jpg',
+    previewImg:batatabit,
     description: 'Una landing page responsive diseñada para proporcionar información actualizada y relevante sobre el mercado de criptomonedas. Esta página web se adapta perfectamente a cualquier dispositivo, ofreciendo una experiencia de usuario óptima tanto en computadoras de escritorio como en tablets y teléfonos móviles.',
     descriptionEn:'A responsive landing page designed to provide up-to-date and relevant information about the cryptocurrency market. This website adapts perfectly to any device, offering an optimal user experience on desktop computers, tablets and mobile phones.',
     techStack: ['Html','Javascript','Css'],
@@ -22,9 +37,9 @@ export const proyects = [{
     demoLink: 'https://damian-16.github.io/MobileFirst/',
     
   },
-  { id:3,
+  { id:4,
     title: 'Pokedex',
-    previewImg:'src/assets/img/proyects/Pokedex.jpg',
+    previewImg:dex,
     description: 'Una aplicacion de Búsqueda con Inicio de sesion Autenticación con Google ,Perfil personalizable y conexion con Base de Datos,con su Host configurado con Netlify',
     descriptionEn:'A search App with Login with Google Auth,customizable profile and database conection',
     techStack:['React','Redux','Bootstrap','Firebase'] ,
@@ -32,9 +47,9 @@ export const proyects = [{
     demoLink: 'https://64c9f10d5bf3966689cf2af0--pokedexwithredux.netlify.app/login'
     
   },
-  { id:4,
+  { id:5,
     title: 'PikaGame',
-    previewImg:'src/assets/img/proyects/Pikagame.png',
+    previewImg:pika,
     description: 'Un pequeño juego hecho con Animaciones Css y Lógica con Js',
     descriptionEn:'A little game made with Css Animations and Js logic',
     techStack:['Javascript','Html','Css'] ,
@@ -42,16 +57,8 @@ export const proyects = [{
     demoLink: 'https://damian-16.github.io/CssGrid/contexto-de-apilamiento.html',
    
   },
-{   id:5,
-    title: 'Yard Store',
-    previewImg:'src/assets/img/proyects/YardStore.png',
-    description: 'Una Tienda virtual con funcionalidad de agregar o quitar Productos de un carrito virtual, Host configurado con Firebase',
-    descriptionEn:'A Virtual Store with functionality to add or remove Products from a virtual cart,\nHost configured with Firebase',
-    techStack:['Angular','Typescript','Firebase'] ,
-    gitHubLink: 'https://github.com/Damian-16/my-store-angular',
-    demoLink: 'https://yarnstore-62ab6.web.app',
-   
-  }];
+
+  ];
 
   export const techIcons = [
     {

@@ -17,7 +17,7 @@ export function getStyles() {
 
   const Box = styled.div`
     width: 40vw;
-    min-width: 600px;
+    min-width: 500px;
     background-color: transparent;
     margin: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -142,7 +142,7 @@ width: 100%;
 height: 100%;
 background-image: url(${cover});
 background-size: cover;
-opacity: 0.3;
+opacity: 0.2;
 border-radius: 40px;
 pointer-events: none; /* Evita que el pseudo-element
  
@@ -155,6 +155,7 @@ pointer-events: none; /* Evita que el pseudo-element
       top: 0,
       left: 0,
       width: "100%",
+      zIndex:999
     },
     navbarList: {
       display: "flex",
@@ -170,7 +171,7 @@ pointer-events: none; /* Evita que el pseudo-element
       textDecoration: "none",
     },
     header: {
-      marginTop: "10%",
+
 
       justifyContent: "center",
       width: "95vw",
@@ -299,7 +300,7 @@ export function dynamicText(params) {
     return {
       init: "Inicio",
       aboutText:
-        "Un apasionado desarrollador de frontend con más de 2 años de experiencia en el fascinante mundo de la tecnología.\n Siempre estoy buscando nuevos desafíos y oportunidades para hacer crecer mis habilidades y seguir construyendo experiencias sorprendentes para los usuarios.\nEn mi viaje como desarrollador, he aprendido que cada línea de código es una oportunidad para mejorar la vida de las personas a través de soluciones innovadoras y creativas. Siempre estoy buscando nuevos desafíos y oportunidades para hacer crecer mis habilidades y seguir construyendo experiencias sorprendentes para los usuarios.\n\nBienvenido a mi portafolio, donde podrás explorar algunos de mis proyectos y conocer más sobre mi trabajo y trayectoria como desarrollador. ¡Espero que disfrutes tu visita y no dudes en contactarme si quieres hablar sobre proyectos emocionantes o colaboraciones inspiradoras",
+        "Un apasionado desarrollador de frontend con más de 2 años de experiencia en el fascinante mundo de la tecnología.\n Siempre estoy buscando nuevos desafíos y oportunidades para hacer crecer mis habilidades y seguir construyendo experiencias sorprendentes para los usuarios.\nEn mi viaje como desarrollador, he aprendido que cada línea de código es una oportunidad para mejorar la vida de las personas a través de soluciones innovadoras y creativas.\n\nBienvenido a mi portafolio, donde podrás explorar algunos de mis proyectos y conocer más sobre mi trabajo y trayectoria como desarrollador. ¡Espero que disfrutes tu visita y no dudes en contactarme si quieres hablar sobre proyectos emocionantes o colaboraciones inspiradoras",
       intro:
         "Hola a todos!  Soy Damian Pinedo Morganti , Desarrollador Front-End",
       title: "Portafolio",
@@ -311,7 +312,7 @@ export function dynamicText(params) {
     return {
       init: "Start",
       aboutText:
-        "A passionate frontend developer with more than 2 years of experience in the fascinating world of technology.\nIn my journey as a developer, I learned that each line of code is an opportunity to improve life of people through innovative and creative solutions. I'm always looking for new challenges and opportunities to grow my skills and keep building amazing user experiences.\n\nWelcome to my portfolio, where you can explore some of my projects and learn more about my work and journey as a developer. I hope you enjoy your visit and don't hesitate to contact me if you want to talk about exciting projects or inspiring collaborations!",
+        "A passionate frontend developer with more than 2 years of experience in the fascinating world of technology.\nIn my journey as a developer, I learned that each line of code is an opportunity to improve life of people through innovative and creative solutions.\n\nWelcome to my portfolio, where you can explore some of my projects and learn more about my work and journey as a developer. I hope you enjoy your visit and don't hesitate to contact me if you want to talk about exciting projects or inspiring collaborations!",
       intro: "Hello Everyone! I'm Damian Pinedo Morganti, Frontend Developer",
       title: "Portfolio",
       title2: "Contact Me",
