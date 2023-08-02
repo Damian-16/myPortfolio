@@ -24,13 +24,13 @@ export const proyects = [{
   },
   { id:3,
     title: 'Pokedex',
-    previewImg:'src/assets/img/proyects/Pokedex.png',
-    description: 'Una aplicacion de Búsqueda con Inicio de sesion ,Perfil personalizable y conexion con Base de Datos,con su Host configurado con Netlify',
-    descriptionEn:'A search App with Login ,customizable profile and database conection',
+    previewImg:'src/assets/img/proyects/Pokedex.jpg',
+    description: 'Una aplicacion de Búsqueda con Inicio de sesion Autenticación con Google ,Perfil personalizable y conexion con Base de Datos,con su Host configurado con Netlify',
+    descriptionEn:'A search App with Login with Google Auth,customizable profile and database conection',
     techStack:['React','Redux','Bootstrap','Firebase'] ,
     gitHubLink: 'https://github.com/Damian-16/AprendiendoRedux',
-    demoLink: 'https://649b735f8fc10a0b4b73db40--pokedexwithredux.netlify.app/login',
-   
+    demoLink: 'https://64c9f10d5bf3966689cf2af0--pokedexwithredux.netlify.app/login'
+    
   },
   { id:4,
     title: 'PikaGame',

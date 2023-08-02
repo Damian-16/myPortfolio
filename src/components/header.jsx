@@ -31,7 +31,9 @@ const Header = ({language,setLanguage,text}) => {
      <styles.ImageBackground></styles.ImageBackground>
      
       <div style={{ ...styles.about, ...(isMobile && styles.aboutMobile) }}>
-        <img style={styles.avatar} src={avatarImage} alt='profile' />
+        <div style={styles.avatar}>
+        <img style={styles.avatarStyle} src={avatarImage} alt='profile' />
+        </div>
         <styles.aboutText>
          {text.aboutText}
         </styles.aboutText>

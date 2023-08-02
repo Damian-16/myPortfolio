@@ -33,7 +33,7 @@ const btn4 = keyframes`
 100%, 50% {
   bottom: 100%;
 }
-`
+`;
 export const DynamicButton = styled.button`
   position: relative;
   background: transparent;
