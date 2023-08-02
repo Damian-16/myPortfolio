@@ -31,6 +31,8 @@ body {
   padding:0px;
   display: flex;
   place-items: center;
+  font-family: 'Montserrat', sans-serif;
+  
   /* min-width: 320px;
   min-height: 100vh; */
 }

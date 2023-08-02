@@ -27,7 +27,7 @@ const Portfolio = ({ text, language,darkMode }) => {
       >
         <h2>{item.title}</h2>
         <img src={item.previewImg} style={{ height: 200, width: "90%" }} />
-        <p>{!language ? item.description : item.descriptionEn}</p>
+        <p style={{fontSize:"1em"}}>{!language ? item.description : item.descriptionEn}</p>
         <div style={styles.actionsBox}>{returnIcons(item.techStack)}</div>
         <button
           style={{ margin: 8 }}

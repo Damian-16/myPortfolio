@@ -27,7 +27,7 @@ export const proyects = [{
     previewImg:'src/assets/img/proyects/Pokedex.png',
     description: 'Una aplicacion de Búsqueda con Inicio de sesion ,Perfil personalizable y conexion con Base de Datos',
     descriptionEn:'A search App with Login ,customizable profile and database conection',
-    techStack:['React','Redux','Firebase'] ,
+    techStack:['React','Redux','Bootstrap','Firebase'] ,
     gitHubLink: 'https://github.com/Damian-16/AprendiendoRedux',
     demoLink: 'https://649b735f8fc10a0b4b73db40--pokedexwithredux.netlify.app/login',
    
@@ -46,7 +46,7 @@ export const proyects = [{
     title: 'Yard Store',
     previewImg:'src/assets/img/proyects/YardStore.png',
     description: 'Una Tienda virtual con funcionalidad de agregar o quitar Productos de un carrito virtual, Host configurado con Firebase',
-    descriptionEn:'A Virtual Store with functionality to add or remove Products from a virtual cart, Host configured with Firebase',
+    descriptionEn:'A Virtual Store with functionality to add or remove Products from a virtual cart,\nHost configured with Firebase',
     techStack:['Angular','Typescript','Firebase'] ,
     gitHubLink: 'https://github.com/Damian-16/my-store-angular',
     demoLink: 'https://yarnstore-62ab6.web.app',
