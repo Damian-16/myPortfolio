@@ -72,4 +72,8 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+  label{
+    font-weight:bolder;
+    margin:5px
+  }
 }

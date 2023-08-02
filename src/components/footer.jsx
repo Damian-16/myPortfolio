@@ -4,7 +4,7 @@ import { linksRedirect } from "../utils/constants";
 import emailjs from '@emailjs/browser';
 import { publicKey, serviceID, templateID } from "../privateNumber";
 
-const Footer = ({text}) => {
+const Footer = ({text,}) => {
   const styles = getStyles();
   const sendMail = (params) => {
     
@@ -37,31 +37,24 @@ const Footer = ({text}) => {
           style={styles.icons}
           onClick={()=>linksRedirect('https://www.linkedin.com/in/damian-pinedo-morganti/')}
         ></img>
-
-        <img
+          <img
           src={
-            "https://icon-library.com/images/download-gmail-icon/download-gmail-icon-26.jpg"
+            "https://cdn-icons-png.flaticon.com/512/733/733579.png?w=740&t=st=1691007972~exp=1691008572~hmac=5b21e0dd1bf0935f7e2d6c2578d17e695f0d8096e8ac7d67aafc451b821259ff"
           }
-          alt={"gmailIcon"}
+          alt={"twitIcon"}
           style={styles.icons}
-          onClick={()=>sendMail('g')}
+          onClick={()=>linksRedirect('https://twitter.com/DamianMorganti4')}
         ></img>
 
-        <img
-          src={"https://icon-library.com/images/free-e-mail-icon/free-e-mail-icon-7.jpg"}
-          alt={"mailIcon"}
-          style={styles.icons}
-          onClick={()=>sendMail('m')}
-        ></img>
 
-<form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <button type="submit">Enviar</button>
+<form style={{display:'flex',justifyContent: 'center',flexDirection: 'column'}} ref={form} onSubmit={sendEmail}>
+      <label>{text.message[0]}</label>
+      <styles.NeonInput type="text" name="user_name" />
+      <label>{text.message[1]}</label>
+      <styles.NeonInput type="email" name="user_email" />
+      <label>{text.message[2]}</label>
+      <styles.NeonTextarea name="message" />
+      <button style={{marginTop:10}} type="submit">{text.message[3]}</button>
     </form>
       </div>
       <p>Copyright © Website created by Damian Pinedo Morganti{new Date().getFullYear()}</p>

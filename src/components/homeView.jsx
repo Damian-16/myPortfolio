@@ -40,7 +40,7 @@ const HomeView = () => {
 
       <Portfolio language={language} darkMode={darkMode} text={text} />
 
-      <Footer text={text} />
+      <Footer darkMode={darkMode} text={text} />
     </div>
   );
 };

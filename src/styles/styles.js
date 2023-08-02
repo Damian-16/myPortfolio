@@ -148,6 +148,59 @@ pointer-events: none; /* Evita que el pseudo-element
  
 `;
 
+const NeonInput = styled.input`
+background-color: transparent;
+border: none;
+color: #11aec6;
+padding: 10px 15px;
+font-size: 16px;
+border-radius: 5px;
+box-shadow: 0 0 5px #11aec6, 0 0 10px #11aec6, 0 0 15px #11aec6, 0 0 20px rgba(17, 174, 198, 0.8);
+outline: none;
+margin:3px;
+transition: box-shadow 0.3s ease;
+
+&::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+&:hover {
+  box-shadow: 0 0 5px #00ff00, 0 0 15px #00ff00, 0 0 25px #00ff00, 0 0 40px rgba(0, 255, 0, 0.8);
+}
+`
+const NeonTextarea = styled.textarea`
+  background-color: transparent;
+  border: none;
+  color: #11aec6;
+  padding: 50px 55px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #11aec6, 0 0 10px #11aec6, 0 0 15px #11aec6, 0 0 20px rgba(17, 174, 198, 0.8);
+  outline: none;
+  resize: none;
+  margin-bottom: 5px; 
+  overflow: auto; 
+  transition: box-shadow 0.3s ease;
+  &:hover {
+    box-shadow: 0 0 5px #00ff00, 0 0 15px #00ff00, 0 0 25px #00ff00, 0 0 40px rgba(0, 255, 0, 0.8);
+  }
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  &::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #11aec6 ;
+    border-radius: 10px;
+  }
+
+
+`;
+
+
+
   return {
     navbar: {
       color: "white",
@@ -292,6 +345,10 @@ pointer-events: none; /* Evita que el pseudo-element
       display: "flex",
       marginBottom: 25,
     },
+    
+    NeonInput,
+    NeonTextarea
+  
   };
 }
 
@@ -307,6 +364,7 @@ export function dynamicText(params) {
       title2: "Contactame",
       changeLng: "Cambiar a Inglés",
       toastErr: "Este Repositorio se Encuentra en Privado actualmente",
+      message:["Nombre","Correo Electronico","Mensaje","Enviar"]
     };
   } else {
     return {
@@ -318,6 +376,7 @@ export function dynamicText(params) {
       title2: "Contact Me",
       changeLng: "Change to Spanish",
       toastErr: "This Repository is currently in Private Mode",
+      message:["Name","Email","Message","Send"]
     };
   }
 }
