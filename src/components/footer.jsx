@@ -3,6 +3,7 @@ import { getStyles } from "../styles/styles";
 import { linksRedirect } from "../utils/constants";
 import emailjs from '@emailjs/browser';
 import { publicKey, serviceID, templateID } from "../privateNumber";
+import { toast } from "react-hot-toast";
 
 const Footer = ({text,}) => {
   const styles = getStyles();
@@ -18,8 +19,10 @@ const Footer = ({text,}) => {
 
     emailjs.sendForm(serviceID, templateID, form.current, publicKey)
       .then((result) => {
-          console.log(result.text);
+        toast.success(text.toastMail)
       }, (error) => {
+          
+          toast.error(text.toastMailErr);
           console.log(error.text);
       });
   };

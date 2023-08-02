@@ -364,7 +364,9 @@ export function dynamicText(params) {
       title2: "Contactame",
       changeLng: "Cambiar a Inglés",
       toastErr: "Este Repositorio se Encuentra en Privado actualmente",
-      message:["Nombre","Correo Electronico","Mensaje","Enviar"]
+      message:["Nombre","Correo Electronico","Mensaje","Enviar"],
+      toastMail:"El Mensaje Fue enviado con Éxito",
+      toastMailErr:"Algo salio mal Intente de Nuevo, o Intente más tarde",
     };
   } else {
     return {
@@ -376,7 +378,9 @@ export function dynamicText(params) {
       title2: "Contact Me",
       changeLng: "Change to Spanish",
       toastErr: "This Repository is currently in Private Mode",
-      message:["Name","Email","Message","Send"]
+      message:["Name","Email","Message","Send"],
+      toastMail:"The Message  has been sent Succesfuly",
+      toastMailErr:"Something went wrong try again or later ",
     };
   }
 }
