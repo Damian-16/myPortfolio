@@ -39,12 +39,16 @@ export const DynamicButton = styled.button`
   background: transparent;
   padding: 10px 20px;
   color: #11aec6;
-  font-size: 16px;
+  font-size: 1rem;
   text-transform: uppercase;
   overflow: hidden;
   transition: 0.5s;
   cursor: pointer;
 
+  @media (max-width: 558px) {
+    font-size: 0.7rem;
+    padding:3px;
+  }
 & > span.dblFirst {
   content: "";
   position: absolute;
@@ -98,4 +102,6 @@ export const DynamicButton = styled.button`
       border-radius: 5px;
       box-shadow: 0 0 5px #03e9f4, 0 0 15px #03e9f4, 0 0 20px #03e9f4, 0 0 25px #03e9f4;}
 }
+
+
 `;

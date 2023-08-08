@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { getStyles } from "../styles/styles";
 import { linksRedirect } from "../utils/constants";
 import emailjs from '@emailjs/browser';
@@ -6,20 +6,30 @@ import { publicKey, serviceID, templateID } from "../privateNumber";
 import { toast } from "react-hot-toast";
 
 const Footer = ({text,}) => {
+    const [inputValues, setInputValues] = useState({
+    user_name: '',
+    user_email: '',
+    user_message: '',
+  });
   const styles = getStyles();
   const sendMail = (params) => {
     
     window.location.href = params === 'g'?'mailto:damianmorganti16@gmail.com':'mailto:DamianMorganti16@hotmail.com'
 
   };
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setInputValues({ ...inputValues, [name]: value });
+  };
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+   
     emailjs.sendForm(serviceID, templateID, form.current, publicKey)
       .then((result) => {
         toast.success(text.toastMail)
+        console.log("mesjenviado")
       }, (error) => {
           
           toast.error(text.toastMailErr);
@@ -49,17 +59,17 @@ const Footer = ({text,}) => {
           onClick={()=>linksRedirect('https://twitter.com/DamianMorganti4')}
         ></img>
 
-
-<form style={{display:'flex',justifyContent: 'center',flexDirection: 'column'}} ref={form} onSubmit={sendEmail}>
+</div>
+<form style={{display:'flex',justifyContent: 'center',flexDirection: 'column',margin:10}} ref={form} onSubmit={sendEmail}>
       <label>{text.message[0]}</label>
-      <styles.NeonInput type="text" name="user_name" />
+      <styles.NeonInput type="text" name="user_name"  required  />
       <label>{text.message[1]}</label>
-      <styles.NeonInput type="email" name="user_email" />
+      <styles.NeonInput type="email" name="user_email"  required />
       <label>{text.message[2]}</label>
-      <styles.NeonTextarea name="message" />
+      <styles.NeonTextarea name="message" required />
       <button style={{marginTop:10}} type="submit">{text.message[3]}</button>
     </form>
-      </div>
+      
       <p>Copyright © Website created by Damian Pinedo Morganti{new Date().getFullYear()}</p>
     </div>
   );

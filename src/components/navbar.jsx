@@ -22,13 +22,13 @@ const Navbar = ({ language, setLanguage, text, darkMode, toggleDarkMode }) => {
         }}
       >
         <ul style={styles.navbarList}>
-          <li style={styles.navbarItem}>
+          <li style={{...styles.navbarItem,marginLeft:"2%"}}>
             <a href="/">{text.init}</a>
           </li>
           <li style={styles.navbarItem}>
             <a href="#portfolio">{text.title}</a>
           </li>
-          <li style={styles.navbarItem}>
+          <li style={{...styles.navbarItem,marginRight:"4%"}}>
             <a href="#contact">{text.title2}</a>
           </li>
           <div style={styles.contentButtons}>
@@ -47,7 +47,7 @@ const Navbar = ({ language, setLanguage, text, darkMode, toggleDarkMode }) => {
           <span>{text.intro}</span>
           </styles.titleHeader>
         <DarkModeSwitch
-          style={{ position:'fixed',right:20,bottom:'75%'}}
+          style={{ position:'fixed',right:20,bottom:'75%',zIndex:999}}
           checked={darkMode}
           onChange={handleToggleDarkMode}
           size={60}

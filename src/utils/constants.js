@@ -10,7 +10,7 @@ export const proyects = [{
     id:1,
     title: 'Delivery Tracker',
     previewImg:deliveryTrackerimg,
-    description: 'Una aplicación de Rastreo y Delivery de Una aplicación de Rastreo y Delivery de productos, actualmente en producción, que brinda a los usuarios la posibilidad de realizar seguimiento de sus pedidos y disfrutar del servicio de entrega de productos. ,Actualmente en producción , por motivos de Mantenimientos del Servidor en este momento no se encuentra funcionando',
+    description: 'Una aplicación de Rastreo y Delivery de productos,que brinda a los usuarios la posibilidad de realizar seguimiento de sus pedidos y disfrutar del servicio de entrega de los mismos. ,Actualmente esta desplegado en producción , por motivos de Mantenimientos del Servidor en este momento no se encuentra funcionando',
     descriptionEn:'A Tracking and Delivery application for A Tracking and Delivery application for products, currently in production, which gives users the ability to track their orders and enjoy product delivery service,Currently in production, for reasons of Server Maintenance at this time it is not working',
     techStack: ['React','Redux','Typescript','MySql'],
     gitHubLink: null,

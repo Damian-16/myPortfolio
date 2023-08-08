@@ -29,7 +29,11 @@ export function getStyles() {
     }
     @media (max-width: 768px) {
       width: 80vw;
-      min-width: 500px;
+      min-width: 350px;
+      &:hover {
+        transform: scale(1.01);
+        box-shadow: 0 0 10px #00ff00;
+      }
     }
   `;
 
@@ -38,16 +42,21 @@ export function getStyles() {
     text-align: center;
     transform: scale(0.94);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    margin-left: 2%;
     @keyframes scale {
       100% {
         transform: scale(1);
       }
+    }
+    @media (max-width: 658px) {
+      font-size: 1.2rem;
     }
 
     span {
       display: inline-block;
       opacity: 0;
       filter: blur(4px);
+      margin-top: 20px;
     }
 
     span:nth-child(1) {
@@ -132,7 +141,22 @@ export function getStyles() {
 
   const Container = styled.div`
     position: relative;
+    margin: 0px auto;
   `;
+  const PortfolioContainer = styled.div`
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 700px) {
+    overflow-x: auto;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    
+  }
+`;
 
   const ImageBackground = styled.div`
 position: absolute;
@@ -148,58 +172,58 @@ pointer-events: none; /* Evita que el pseudo-element
  
 `;
 
-const NeonInput = styled.input`
-background-color: transparent;
-border: none;
-color: #11aec6;
-padding: 10px 15px;
-font-size: 16px;
-border-radius: 5px;
-box-shadow: 0 0 5px #11aec6, 0 0 10px #11aec6, 0 0 15px #11aec6, 0 0 20px rgba(17, 174, 198, 0.8);
-outline: none;
-margin:3px;
-transition: box-shadow 0.3s ease;
-
-&::placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-&:hover {
-  box-shadow: 0 0 5px #00ff00, 0 0 15px #00ff00, 0 0 25px #00ff00, 0 0 40px rgba(0, 255, 0, 0.8);
-}
-`
-const NeonTextarea = styled.textarea`
-  background-color: transparent;
-  border: none;
-  color: #11aec6;
-  padding: 50px 55px;
-  font-size: 16px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #11aec6, 0 0 10px #11aec6, 0 0 15px #11aec6, 0 0 20px rgba(17, 174, 198, 0.8);
-  outline: none;
-  resize: none;
-  margin-bottom: 5px; 
-  overflow: auto; 
-  transition: box-shadow 0.3s ease;
-  &:hover {
-    box-shadow: 0 0 5px #00ff00, 0 0 15px #00ff00, 0 0 25px #00ff00, 0 0 40px rgba(0, 255, 0, 0.8);
-  }
-  &::placeholder {
-    color: rgba(255, 255, 255, 0.5);
-  }
-  &::-webkit-scrollbar {
-    width: 8px;
+  const NeonInput = styled.input`
     background-color: transparent;
-  }
+    border: none;
+    color: #11aec6;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #11aec6, 0 0 10px #11aec6, 0 0 15px #11aec6,
+      0 0 20px rgba(17, 174, 198, 0.8);
+    outline: none;
+    margin: 3px;
+    transition: box-shadow 0.3s ease;
 
-  &::-webkit-scrollbar-thumb {
-    background-color: #11aec6 ;
-    border-radius: 10px;
-  }
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    &:hover {
+      box-shadow: 0 0 5px #00ff00, 0 0 15px #00ff00, 0 0 25px #00ff00,
+        0 0 40px rgba(0, 255, 0, 0.8);
+    }
+  `;
+  const NeonTextarea = styled.textarea`
+    background-color: transparent;
+    border: none;
+    color: #11aec6;
+    padding: 50px 55px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #11aec6, 0 0 10px #11aec6, 0 0 15px #11aec6,
+      0 0 20px rgba(17, 174, 198, 0.8);
+    outline: none;
+    resize: none;
+    margin-bottom: 5px;
+    overflow: auto;
+    transition: box-shadow 0.3s ease;
+    &:hover {
+      box-shadow: 0 0 5px #00ff00, 0 0 15px #00ff00, 0 0 25px #00ff00,
+        0 0 40px rgba(0, 255, 0, 0.8);
+    }
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    &::-webkit-scrollbar {
+      width: 8px;
+      background-color: transparent;
+    }
 
-
-`;
-
-
+    &::-webkit-scrollbar-thumb {
+      background-color: #11aec6;
+      border-radius: 10px;
+    }
+  `;
 
   return {
     navbar: {
@@ -208,7 +232,7 @@ const NeonTextarea = styled.textarea`
       top: 0,
       left: 0,
       width: "100%",
-      zIndex:999
+      zIndex: 999,
     },
     navbarList: {
       display: "flex",
@@ -218,24 +242,26 @@ const NeonTextarea = styled.textarea`
     navbarItem: {
       marginRight: "5px",
       marginLeft: "5px",
+      fontSize: ".9rem",
     },
     navbarLink: {
       color: "white",
       textDecoration: "none",
     },
     header: {
-
-
+      display: "flex",
       justifyContent: "center",
-      width: "95vw",
+      margin: "2%",
       flexDirection: "column",
+      alignSelf: "center"
+      
     },
     Container,
     ImageBackground,
     titleHeader,
     headerTitle: {
       textAlign: "left",
-      marginTop: "8%",
+      marginTop: "10%",
     },
     cover: {
       width: "98%",
@@ -249,6 +275,8 @@ const NeonTextarea = styled.textarea`
     aboutMobile: {
       display: "flex",
       flexWrap: "wrap",
+      justifyContent: "center",
+      alignSelf: "center",
     },
     aboutText: styled.p`
       animation-duration: 3s;
@@ -258,6 +286,7 @@ const NeonTextarea = styled.textarea`
       z-index: 1;
       font-weigth: bolder;
       font-size: 1.2rem;
+      align-self: center;
       @media (max-width: 768px) {
         font-size: 0.9rem;
         margin: 5%;
@@ -318,37 +347,32 @@ const NeonTextarea = styled.textarea`
       alignItems: "center",
       zIndex: 1,
       userSelect: "none",
-      right: 20,
+      right: 10,
       top: 10,
     },
 
-    portfolioContainer: {
-      width: "100%",
-      flex: 1,
-      display: "flex",
-      justifyContent: "center",
-      flexWrap: "wrap",
-    },
+    PortfolioContainer,
     Box,
 
     actionsBox: {
       display: "flex",
       justifyContent: "center",
+      flexWrap: "wrap",
     },
     icons: {
-      width: 30,
-      height: 30,
+      width: "2rem",
+      height: "2rem",
       cursor: "pointer",
+      padding: 0,
     },
     iconsWorks: {
       justifyContent: "space-around",
       display: "flex",
       marginBottom: 25,
     },
-    
+
     NeonInput,
-    NeonTextarea
-  
+    NeonTextarea,
   };
 }
 
@@ -356,31 +380,34 @@ export function dynamicText(params) {
   if (!params) {
     return {
       init: "Inicio",
-      aboutText:
-        "Un apasionado desarrollador de frontend con más de 2 años de experiencia en el fascinante mundo de la tecnología.\n Siempre estoy buscando nuevos desafíos y oportunidades para hacer crecer mis habilidades y seguir construyendo experiencias sorprendentes para los usuarios.\nEn mi viaje como desarrollador, he aprendido que cada línea de código es una oportunidad para mejorar la vida de las personas a través de soluciones innovadoras y creativas.\n\nBienvenido a mi portafolio, donde podrás explorar algunos de mis proyectos y conocer más sobre mi trabajo y trayectoria como desarrollador. ¡Espero que disfrutes tu visita y no dudes en contactarme si quieres hablar sobre proyectos emocionantes o colaboraciones inspiradoras",
+      aboutText:"Un apasionado desarrollador frontend con más de 2 años de experiencia en tecnologías como React, TypeScript, Angular y Nest. Mi enfoque se centra en crear experiencias excepcionales para los usuarios, aprovechando mis habilidades para diseñar interfaces atractivas y funcionales. Constantemente busco nuevos desafíos para expandir mis conocimientos y seguir mejorando en el emocionante mundo del desarrollo frontend.",
       intro:
-        "Hola a todos!  Soy Damian Pinedo Morganti , Desarrollador Front-End",
+        "Damián Nicolás Pinedo Morganti,\n\nDesarrollador Front-End",
       title: "Portafolio",
       title2: "Contactame",
       changeLng: "Cambiar a Inglés",
       toastErr: "Este Repositorio se Encuentra en Privado actualmente",
-      message:["Nombre","Correo Electronico","Mensaje","Enviar"],
-      toastMail:"El Mensaje Fue enviado con Éxito",
-      toastMailErr:"Algo salio mal Intente de Nuevo, o Intente más tarde",
+      tabParagraph: "Desliza Para ver Más",
+      message: ["Nombre", "Correo Electronico", "Mensaje", "Enviar"],
+      toastMail: "El Mensaje Fue enviado con Éxito",
+      toastMailErr: "Algo salio mal Intente de Nuevo, o Intente más tarde",
+      validationInput:"Por Favor llene todos los campos :)"
     };
   } else {
     return {
       init: "Start",
       aboutText:
-        "A passionate frontend developer with more than 2 years of experience in the fascinating world of technology.\nIn my journey as a developer, I learned that each line of code is an opportunity to improve life of people through innovative and creative solutions.\n\nWelcome to my portfolio, where you can explore some of my projects and learn more about my work and journey as a developer. I hope you enjoy your visit and don't hesitate to contact me if you want to talk about exciting projects or inspiring collaborations!",
-      intro: "Hello Everyone! I'm Damian Pinedo Morganti, Frontend Developer",
+        "A passionate frontend developer with more than 2 years of experience in the fascinating world of technology.\nIn my journey as a developer, I learned that each line of code is an opportunity to improve life of people through innovative and creative solutions.",
+      intro: "Damián Nicolás Pinedo Morganti,\nFrontend Developer",
       title: "Portfolio",
       title2: "Contact Me",
       changeLng: "Change to Spanish",
       toastErr: "This Repository is currently in Private Mode",
-      message:["Name","Email","Message","Send"],
-      toastMail:"The Message  has been sent Succesfuly",
-      toastMailErr:"Something went wrong try again or later ",
+      message: ["Name", "Email", "Message", "Send"],
+      tabParagraph:"Swipe to see More",
+      toastMail: "The Message  has been sent Succesfuly",
+      toastMailErr: "Something went wrong try again or later ",
+      validationInput:"Please complete all fields :)"
     };
   }
 }

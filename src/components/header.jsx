@@ -8,7 +8,7 @@ import cover from '../assets/img/coverAbout.png';
 
 const Header = ({language,setLanguage,text}) => {
  
-  //  const [language, setLanguage] = useState()
+ 
   
   const styles = getStyles()
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 880);
