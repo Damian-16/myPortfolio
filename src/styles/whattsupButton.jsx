@@ -1,7 +1,9 @@
 import { useSpring, animated, useTransition } from "react-spring";
 import { getStyles } from "./styles";
 import { useEffect, useState } from "react";
-import { phoneNumber } from "../privateNumber";
+
+
+const phoneNumber =  import.meta.env.REACT_APP_PHONE_NUMBER
 
 export const WhatsappButton = () => {
   const styles = getStyles();
