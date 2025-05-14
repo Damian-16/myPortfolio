@@ -382,7 +382,7 @@ export function dynamicText(params) {
   if (!params) {
     return {
       init: "Inicio",
-      aboutText:"Un apasionado desarrollador frontend con más de 2 años de experiencia en tecnologías como React, TypeScript, Angular y Nest. Mi enfoque se centra en crear experiencias excepcionales para los usuarios, aprovechando mis habilidades para diseñar interfaces atractivas y funcionales. Constantemente busco nuevos desafíos para expandir mis conocimientos y seguir mejorando en el emocionante mundo del desarrollo frontend.",
+      aboutText:"Un apasionado desarrollador frontend con más de 4 años de experiencia en tecnologías como React,React  Native, Next js,Tailwind , TypeScript, Angular y Nest. Mi enfoque se centra en crear experiencias excepcionales para los usuarios, aprovechando mis habilidades para diseñar interfaces atractivas y funcionales. Constantemente busco nuevos desafíos para expandir mis conocimientos y seguir mejorando en el emocionante mundo del desarrollo frontend.",
       intro:
         "Damián Nicolás Pinedo Morganti,\n\nDesarrollador Front-End",
       title: "Portafolio",
@@ -399,7 +399,7 @@ export function dynamicText(params) {
     return {
       init: "Start",
       aboutText:
-        "A passionate frontend developer with more than 2 years of experience in the fascinating world of technology.\nIn my journey as a developer, I learned that each line of code is an opportunity to improve life of people through innovative and creative solutions.",
+        "A passionate frontend developer with more than 4 years of experience in the fascinating world of technology.\nIn my journey as a developer, I learned that each line of code is an opportunity to improve life of people through innovative and creative solutions.",
       intro: "Damián Nicolás Pinedo Morganti,\nFrontend Developer",
       title: "Portfolio",
       title2: "Contact Me",

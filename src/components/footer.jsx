@@ -2,8 +2,11 @@ import React, { useRef, useState } from "react";
 import { getStyles } from "../styles/styles";
 import { linksRedirect } from "../utils/constants";
 import emailjs from '@emailjs/browser';
-import { publicKey, serviceID, templateID } from "../privateNumber.js";
 import { toast } from "react-hot-toast";
+
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 
 const Footer = ({text, darkMode}) => {
     const [inputValues, setInputValues] = useState({
