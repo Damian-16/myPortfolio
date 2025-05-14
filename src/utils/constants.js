@@ -1,9 +1,9 @@
 import { toast } from "react-hot-toast";
 import { dynamicText } from "../styles/styles";
 import deliveryTrackerimg from '../assets/img/DeliveryTrackerImg.png'
-import batatabit from '../assets/img/Batatabit.jpg'
+import batatabit from '../assets/img/Batatabit.jPG'
 import yard from '../assets/img/YardStore.png'
-import condaty  from '../assets/img/CondatyWeb.jpg'
+import condaty  from '../assets/img/CondatyWeb.jPG'
 import condatyR from '../assets/img/CondatyR.jpg'
 
 export const proyects = [
