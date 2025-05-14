@@ -4,8 +4,22 @@ import deliveryTrackerimg from '../assets/img/DeliveryTrackerImg.png'
 import batatabit from '../assets/img/Batatabit.jpg'
 import yard from '../assets/img/YardStore.png'
 import condaty  from '../assets/img/CondatyWeb.jpg'
+import condatyR from '../assets/img/CondatyR.jpg'
 
-export const proyects = [{
+export const proyects = [
+  {
+    id:1,
+    title: 'Condaty App',
+    previewImg:condatyR,
+    description: 'Aplicación de Condaty,  Mi trabajo se centró principalmente en el desarrollo de interfaces modernas y responsivas para las aplicaciones web internas y externas, optimizando la experiencia del usuario, integrando componentes reutilizables y garantizando una navegación fluida entre módulos.',
+    descriptionEn:'Condaty Application, My work focused primarily on developing modern and responsive interfaces for both internal and external web applications, optimizing the user experience, integrating reusable components, and ensuring smooth navigation across modules.',
+    techStack: ['React Native','Typescript','Tailwind','Php'],
+    gitHubLink: null,
+    demoLink: null,
+    
+  },
+  
+  {
   id:1,
   title: 'Condaty Web Page',
   previewImg:condaty,
@@ -103,6 +117,14 @@ export const proyects = [{
       name:'Next Js',
       icon:'https://www.svgrepo.com/show/354113/nextjs-icon.svg'
     },
+    {
+      name:'Tailwind',
+      icon:'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png'
+    },
+    {
+      name:'Php',
+      icon:'https://cdn-icons-png.flaticon.com/128/5968/5968332.png'
+    }
     
   ]
 
