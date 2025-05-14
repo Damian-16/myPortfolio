@@ -38,7 +38,7 @@ export const DynamicButton = styled.button`
   position: relative;
   background: transparent;
   padding: 10px 20px;
-  color: #11aec6;
+  color: #00C9A7;
   font-size: 1rem;
   text-transform: uppercase;
   overflow: hidden;
@@ -56,7 +56,7 @@ export const DynamicButton = styled.button`
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #03e9f4);
+  background: linear-gradient(90deg, transparent, #00C9A7);
   animation: 1s linear infinite ${btn1};
 }
 & > span.dblSecond {
@@ -66,7 +66,7 @@ export const DynamicButton = styled.button`
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg,transparent,#03e9f4);
+  background: linear-gradient(180deg,transparent, #00C9A7);
   animation: 1s linear .25s infinite ${btn2};
 }
 & > span.dblThird {
@@ -76,7 +76,7 @@ export const DynamicButton = styled.button`
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg,transparent,#03e9f4);
+  background: linear-gradient(270deg,transparent, #00C9A7);
   animation: 1s linear .5s infinite ${btn3};
 }
 & > span.dblFourth {
@@ -86,7 +86,7 @@ export const DynamicButton = styled.button`
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg,transparent,#03e9f4);
+  background: linear-gradient(360deg,transparent, #00C9A7);
   animation: 1s linear .75s infinite ${btn4};
 
 }
@@ -97,10 +97,10 @@ export const DynamicButton = styled.button`
 &:hover {
     & > button{
     color: #fff;
-    background: #11aec6;
+    background: #00C9A7;
       color: #fff;
       border-radius: 5px;
-      box-shadow: 0 0 5px #03e9f4, 0 0 15px #03e9f4, 0 0 20px #03e9f4, 0 0 25px #03e9f4;}
+      
 }
 
 

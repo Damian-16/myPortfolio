@@ -371,6 +371,7 @@ pointer-events: none; /* Evita que el pseudo-element
       display: "flex",
       marginBottom: 25,
     },
+    
 
     NeonInput,
     NeonTextarea,
@@ -386,7 +387,7 @@ export function dynamicText(params) {
         "Damián Nicolás Pinedo Morganti,\n\nDesarrollador Front-End",
       title: "Portafolio",
       title2: "Contactame",
-      changeLng: "Cambiar a Inglés",
+      changeLng: "Toogle ",
       toastErr: "Este Repositorio se Encuentra en Privado actualmente",
       tabParagraph: "Desliza Para ver Más",
       message: ["Nombre", "Correo Electronico", "Mensaje", "Enviar"],
@@ -402,7 +403,7 @@ export function dynamicText(params) {
       intro: "Damián Nicolás Pinedo Morganti,\nFrontend Developer",
       title: "Portfolio",
       title2: "Contact Me",
-      changeLng: "Change to Spanish",
+      changeLng: "Cambiar a español",
       toastErr: "This Repository is currently in Private Mode",
       message: ["Name", "Email", "Message", "Send"],
       tabParagraph:"Swipe to see More",

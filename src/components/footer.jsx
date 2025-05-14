@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser';
 import { publicKey, serviceID, templateID } from "../privateNumber";
 import { toast } from "react-hot-toast";
 
-const Footer = ({text,}) => {
+const Footer = ({text, darkMode}) => {
     const [inputValues, setInputValues] = useState({
     user_name: '',
     user_email: '',
@@ -62,11 +62,11 @@ const Footer = ({text,}) => {
 </div>
 <form style={{display:'flex',justifyContent: 'center',flexDirection: 'column',margin:10}} ref={form} onSubmit={sendEmail}>
       <label>{text.message[0]}</label>
-      <styles.NeonInput type="text" name="user_name"  required  />
+     {darkMode ? <styles.NeonInput type="text" name="user_name"  required  /> : <input class="input-custom"  type='text' name="user_name" required />   }
       <label>{text.message[1]}</label>
-      <styles.NeonInput type="email" name="user_email"  required />
+      {darkMode ? <styles.NeonInput type="email" name="user_email"  required /> : <input class="input-custom" type='text' name="user_name" required />}
       <label>{text.message[2]}</label>
-      <styles.NeonTextarea name="message" required />
+      {darkMode ? <styles.NeonTextarea name="message" required /> :  <textarea class='textarea-custom' type='text' name="user_name" required /> }
       <button style={{marginTop:10}} type="submit">{text.message[3]}</button>
     </form>
       

@@ -36,7 +36,7 @@ const Portfolio = ({ text, language, darkMode }) => {
       key={item.id}
     >
       <h2>{item.title}</h2>
-      <img src={item.previewImg} style={{ height: 200, width: "90%" }} />
+      <img src={item.previewImg} style={{ height: 200, width: "90%", objectFit:"contain" }} />
       <p
         style={{
           fontSize: isMobile ? ".8em" : "1em",
