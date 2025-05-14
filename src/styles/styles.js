@@ -284,6 +284,7 @@ pointer-events: none; /* Evita que el pseudo-element
       white-space: pre-line;
       text-align: start;
       z-index: 1;
+      margin-right: 16px;
       font-weigth: bolder;
       font-size: 1.2rem;
       align-self: center;

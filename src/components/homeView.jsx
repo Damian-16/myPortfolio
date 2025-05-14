@@ -16,7 +16,7 @@ const HomeView = () => {
     setDarkMode(!darkMode);
   };
   const appStyles = {
-    background: darkMode ? "#333" : "#E8E8E8",
+    background: darkMode ? "#333" : "#FAF6F2",
     color: darkMode ? "white" : "black",
     display: "flex",
     flexDirection: "column",

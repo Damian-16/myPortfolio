@@ -18,7 +18,7 @@ const Navbar = ({ language, setLanguage, text, darkMode, toggleDarkMode }) => {
           ...styles.navbar,
           background: darkMode
             ? "linear-gradient(to right, #12e55b, #10e351, #10e246, #11e03a, #14de2c, #19d233, #1ec737, #22bb3b, #2ea247, #388a4d, #40724e, #46594c)"
-            : "#6fdcbf",
+            : "#fff",
         }}
       >
         <ul style={styles.navbarList}>
