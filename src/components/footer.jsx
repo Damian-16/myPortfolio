@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { getStyles } from "../styles/styles";
 import { linksRedirect } from "../utils/constants";
 import emailjs from '@emailjs/browser';
-import { publicKey, serviceID, templateID } from "../privateNumber";
+import { publicKey, serviceID, templateID } from "../privateNumber.js";
 import { toast } from "react-hot-toast";
 
 const Footer = ({text, darkMode}) => {
