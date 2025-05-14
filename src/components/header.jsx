@@ -20,7 +20,7 @@ const Header = ({language,setLanguage,text}) => {
     window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener('resize ', handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
    
