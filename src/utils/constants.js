@@ -2,12 +2,21 @@ import { toast } from "react-hot-toast";
 import { dynamicText } from "../styles/styles";
 import deliveryTrackerimg from '../assets/img/DeliveryTrackerImg.png'
 import batatabit from '../assets/img/Batatabit.jpg'
-import dex from '../assets/img/Pokedex.jpg'
-import pika from '../assets/img/Pikagame.png'
 import yard from '../assets/img/YardStore.png'
+import condaty  from '../assets/img/CondatyWeb.jpg'
 
 export const proyects = [{
-    id:1,
+  id:1,
+  title: 'Condaty Web Page',
+  previewImg:condaty,
+  description: 'La página web oficial de la aplicación Condaty, con toda la información pertinente, es responsiva y se encuentra actualmente en producción.',
+  descriptionEn:'The official website of the Condaty application, with all the relevant information, fully responsive and currently in production',
+  techStack: ['Next Js','Typescript'],
+  gitHubLink: null,
+  demoLink: 'https://www.condaty.com',
+  
+},
+  { id:2,
     title: 'Delivery Tracker',
     previewImg:deliveryTrackerimg,
     description: 'Una aplicación de Rastreo y Delivery de productos,que brinda a los usuarios la posibilidad de realizar seguimiento de sus pedidos y disfrutar del servicio de entrega de los mismos. ,Actualmente esta desplegado en producción , por motivos de Mantenimientos del Servidor en este momento no se encuentra funcionando',
@@ -17,7 +26,7 @@ export const proyects = [{
     demoLink: 'http://deliverytracker.softsytech.com/home',
     
   },
-  { id:2,
+  { id:3,
     title: 'Yard Store',
     previewImg:yard,
     description: 'Una Tienda virtual con funcionalidad de agregar o quitar Productos de un carrito virtual, Host configurado con Firebase',
@@ -27,7 +36,7 @@ export const proyects = [{
     demoLink: 'https://yarnstore-62ab6.web.app',
    
   },
-  { id:3,
+  { id:4,
     title: 'Batatabit Page',
     previewImg:batatabit,
     description: 'Una landing page responsive diseñada para proporcionar información actualizada y relevante sobre el mercado de criptomonedas. Esta página web se adapta perfectamente a cualquier dispositivo, ofreciendo una experiencia de usuario óptima tanto en computadoras de escritorio como en tablets y teléfonos móviles.',
@@ -37,26 +46,7 @@ export const proyects = [{
     demoLink: 'https://damian-16.github.io/MobileFirst/',
     
   },
-  { id:4,
-    title: 'Pokedex',
-    previewImg:dex,
-    description: 'Una aplicacion de Búsqueda con Inicio de sesion Autenticación con Google ,Perfil personalizable y conexion con Base de Datos,con su Host configurado con Netlify',
-    descriptionEn:'A search App with Login with Google Auth,customizable profile and database conection',
-    techStack:['React','Redux','Bootstrap','Firebase'] ,
-    gitHubLink: 'https://github.com/Damian-16/AprendiendoRedux',
-    demoLink: 'https://64c9f10d5bf3966689cf2af0--pokedexwithredux.netlify.app/login'
-    
-  },
-  { id:5,
-    title: 'PikaGame',
-    previewImg:pika,
-    description: 'Un pequeño juego hecho con Animaciones Css y Lógica con Js',
-    descriptionEn:'A little game made with Css Animations and Js logic',
-    techStack:['Javascript','Html','Css'] ,
-    gitHubLink: 'https://github.com/Damian-16/CssGrid',
-    demoLink: 'https://damian-16.github.io/CssGrid/contexto-de-apilamiento.html',
-   
-  },
+
 
   ];
 
@@ -104,7 +94,16 @@ export const proyects = [{
     {
       name:'Firebase',
       icon:'https://icon-library.com/images/65813-google-computer-icons-github-firebase-angularjs-messaging.png'
-    }
+    },
+    {
+      name:'React Native',
+      icon:'https://icon-library.com/images/react_1353128.png'
+    },
+    {
+      name:'Next Js',
+      icon:'https://www.svgrepo.com/show/354113/nextjs-icon.svg'
+    },
+    
   ]
 
   export const linksRedirect = (url,msg) => {

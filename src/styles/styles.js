@@ -297,7 +297,7 @@ pointer-events: none; /* Evita que el pseudo-element
       width: 200,
       height: 200,
       minWidth: 200,
-      borderRadius: "50%",
+      borderRadius: "15%",
       margin: "3%",
       marginRight: "5%",
       zIndex: 1,
