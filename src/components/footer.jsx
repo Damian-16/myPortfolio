@@ -41,7 +41,7 @@ const Footer = ({text, darkMode}) => {
   };
 
   return (
-    <div id="contact">
+    <div id="contact" style={{height:"100vh"}}>
       <h1>{text.title2}</h1>
 
       <div style={styles.iconsWorks}>

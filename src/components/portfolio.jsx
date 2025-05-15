@@ -67,13 +67,13 @@ const Portfolio = ({ text, language, darkMode }) => {
   const renderProjects = () => proyects.map((item) => <Project key={item.id} item={item} />);
 
   return (
-    <>
+    <div style={{width:'100vw'}}>
       <h1 id="portfolio" style={{ width: "inherit", marginTop: 5 }}>
         {text.title}
       </h1>
       {isMobile && <p>{text.tabParagraph}</p>}
       <styles.PortfolioContainer>{renderProjects()}</styles.PortfolioContainer>
-    </>
+    </div>
   );
 };
 

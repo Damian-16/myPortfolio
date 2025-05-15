@@ -145,17 +145,15 @@ export function getStyles() {
   `;
   const PortfolioContainer = styled.div`
   width: 100%;
-  flex: 1;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 
-  @media (max-width: 700px) {
-    overflow-x: auto;
+
+
     justify-content: flex-start;
-    flex-wrap: nowrap;
+
     
-  }
+  
 `;
 
   const ImageBackground = styled.div`
@@ -249,11 +247,13 @@ pointer-events: none; /* Evita que el pseudo-element
       textDecoration: "none",
     },
     header: {
+      height:"100vh",
       display: "flex",
       justifyContent: "center",
       margin: "2%",
       flexDirection: "column",
-      alignSelf: "center"
+      alignSelf: "center",
+
       
     },
     Container,
