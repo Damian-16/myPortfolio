@@ -359,6 +359,7 @@ pointer-events: none; /* Evita que el pseudo-element
       display: "flex",
       justifyContent: "center",
       flexWrap: "wrap",
+      
     },
     icons: {
       width: "2rem",
@@ -382,7 +383,7 @@ export function dynamicText(params) {
   if (!params) {
     return {
       init: "Inicio",
-      aboutText:"Un apasionado desarrollador frontend con más de 4 años de experiencia en tecnologías como React,React  Native, Next js,Tailwind , TypeScript, Angular y Nest. Mi enfoque se centra en crear experiencias excepcionales para los usuarios, aprovechando mis habilidades para diseñar interfaces atractivas y funcionales. Constantemente busco nuevos desafíos para expandir mis conocimientos y seguir mejorando en el emocionante mundo del desarrollo frontend.",
+      aboutText:"Soy un desarrollador frontend con más de 4 años de experiencia construyendo interfaces web y móviles.\n Trabajo con tecnologías como React, React Native, Next.js, Tailwind CSS, TypeScript, Angular y NestJS, siempre buscando crear productos que realmente aporten valor a los usuarios.\n Me apasiona transformar ideas en experiencias digitales y disfruto tanto del proceso creativo del diseño como de la lógica técnica detrás de cada componente aplicando los principios del código limpio. Siempre estoy explorando nuevas herramientas y metodologías para seguir creciendo como profesional y enfrentar proyectos desafiantes que me saquen de la zona de confort ya que mi filosofía es el Kaizen ( la mejora continúa ).",
       intro:
         "Damián Nicolás Pinedo Morganti,\n\nDesarrollador Front-End",
       title: "Portafolio",
