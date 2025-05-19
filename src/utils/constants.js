@@ -15,7 +15,7 @@ export const proyects = [
     descriptionEn:'Condaty Application, My work focused primarily on developing modern and responsive interfaces for both internal and external web applications, optimizing the user experience, integrating reusable components, and ensuring smooth navigation across modules.',
     techStack: ['React Native','Typescript','Tailwind','Php'],
     gitHubLink: null,
-    demoLink: null,
+    demoLink: 'https://play.google.com/store/apps/details?id=com.rnowner',
     
   },
   
