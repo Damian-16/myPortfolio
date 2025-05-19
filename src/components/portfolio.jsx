@@ -77,7 +77,9 @@ const Portfolio = ({ text, language, darkMode }) => {
         {text.title}
       </h1>
       {isMobile && <p>{text.tabParagraph}</p>}
+      <div style={{width:'100vw',justifyContent:'center',display:'flex',  }}>
       <styles.PortfolioContainer>{renderProjects()}</styles.PortfolioContainer>
+      </div>
     </div>
   );
 };

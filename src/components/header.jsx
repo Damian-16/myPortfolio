@@ -34,6 +34,7 @@ const Header = ({language,setLanguage,text}) => {
         <div style={styles.avatar}>
         <img style={styles.avatarStyle} src={avatarImage} alt='profile' />
         </div>
+        
         <styles.aboutText>
          {text.aboutText}
         </styles.aboutText>

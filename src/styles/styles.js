@@ -150,9 +150,10 @@ export function getStyles() {
   width: 100%;
   display: flex;
   justify-content: center;
+   padding: 40px;
+   overflow-x: scroll;
 
-
-
+     
     justify-content: flex-start;
 
     
@@ -163,8 +164,10 @@ export function getStyles() {
 position: absolute;
 top: 0;
 left: 0;
-width: 100%;
+width: 95vw;
 height: 100%;
+margin-left:16px;
+margin-right:16px;
 background-image: url(${cover});
 background-size: cover;
 opacity: 0.2;
@@ -274,6 +277,8 @@ pointer-events: none; /* Evita que el pseudo-element
     about: {
       display: "flex",
       justifyContent: "space-between",
+      // backgroundColor:'red',
+      margin:16
     },
     aboutMobile: {
       display: "flex",
@@ -288,6 +293,7 @@ pointer-events: none; /* Evita que el pseudo-element
       text-align: start;
       z-index: 1;
       margin-right: 16px;
+      margin-left: 16px;
       font-weigth: bolder;
       font-size: 1.2rem;
       align-self: center;
