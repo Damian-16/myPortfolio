@@ -27,6 +27,7 @@ const Portfolio = ({ text, language, darkMode }) => {
 
   const Project = ({ item }) => (
     <styles.Box
+      darkMode={darkMode}
       style={{
         background: darkMode ? "rgb(2,0,36)" : "#fff",
         backgroundImage: darkMode
@@ -47,6 +48,8 @@ const Portfolio = ({ text, language, darkMode }) => {
         {!language ? item.description : item.descriptionEn}
       </p>
       <div style={styles.actionsBox}>{item.techStack.map(renderTechIcon)}</div>
+      <section style={{display:"flex", justifyContent:"center", marginTop:"auto", paddingBottom:"15px"}}>
+      <div>
       <button
         style={{ margin: 8 }}
         onClick={() => linksRedirect(item.gitHubLink, language)}
@@ -56,6 +59,8 @@ const Portfolio = ({ text, language, darkMode }) => {
       <button onClick={() => linksRedirect(item.demoLink, language)}>
         Demo
       </button>
+      </div>
+      </section>
     </styles.Box>
   );
 

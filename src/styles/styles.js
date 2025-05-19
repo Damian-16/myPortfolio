@@ -18,14 +18,17 @@ export function getStyles() {
   const Box = styled.div`
     width: 40vw;
     min-width: 500px;
+    min-height: 500px;
     background-color: transparent;
     margin: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
 
     &:hover {
       transform: scale(1.1);
-      box-shadow: 0 0 10px #00ff00;
+      box-shadow: ${props => props.darkMode ? '0 0 10px #00ff00' : '0 0 10px #00C9A7'};
     }
     @media (max-width: 768px) {
       width: 80vw;

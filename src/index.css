@@ -43,7 +43,8 @@ h1 {
 }
 .input-custom {
   width: 100%;
-  padding: 12px 16px;
+  max-width: 452px;
+  padding: 12px;
   font-size: 16px;
   border: 1px solid #CCCCCC;
   border-radius: 8px;
@@ -65,8 +66,9 @@ h1 {
 }
 .textarea-custom {
   width: 100%;
+  max-width: 452px;
   min-height: 120px;
-  padding: 12px 16px;
+  padding: 12px;
   font-size: 16px;
   border: 1px solid #CCCCCC;
   border-radius: 8px;

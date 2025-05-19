@@ -70,7 +70,7 @@ const Footer = ({text, darkMode}) => {
       {darkMode ? <styles.NeonInput type="email" name="user_email"  required /> : <input class="input-custom" type='text' name="user_name" required />}
       <label>{text.message[2]}</label>
       {darkMode ? <styles.NeonTextarea name="message" required /> :  <textarea class='textarea-custom' type='text' name="user_name" required /> }
-      <button style={{marginTop:10}} type="submit">{text.message[3]}</button>
+      <button style={{marginTop:10,border:`0.5px solid #00C9A7`,width:'100%'}} type="submit">{text.message[3]}</button>
     </form>
       
       <p>Copyright © Website created by Damian Pinedo Morganti{new Date().getFullYear()}</p>
