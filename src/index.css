@@ -130,3 +130,24 @@ button:focus-visible {
     margin:5px
   }
 }
+
+
+.tech-carousel {
+  display: inline-flex;
+  gap: 20px;
+  animation: scrollTech 20s linear infinite;
+}
+
+@keyframes scrollTech {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.tech-carousel:hover {
+  animation-play-state: paused;
+} 

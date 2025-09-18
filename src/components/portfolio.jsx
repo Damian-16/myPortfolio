@@ -18,12 +18,13 @@ const Portfolio = ({ text, language, darkMode }) => {
     };
   }, []);
 
-  const TechIcon = ({ name, icon }) => (
-    <figure key={name}>
-      <img src={icon} alt={name} style={styles.icons} />
-      <figcaption>{name}</figcaption>
-    </figure>
-  );
+ const TechIcon = ({ name, icon }) => (
+  <figure style={{ display: "inline-block", width: 80, textAlign: "center" }}>
+    <img src={icon} alt={name} style={{ width: 50, height: 50, objectFit: "contain" }} />
+    <figcaption style={{ fontSize: 12 }}>{name}</figcaption>
+  </figure>
+);
+
 
   const Project = ({ item }) => (
     <styles.Box
@@ -47,7 +48,12 @@ const Portfolio = ({ text, language, darkMode }) => {
       >
         {!language ? item.description : item.descriptionEn}
       </p>
-      <div style={styles.actionsBox}>{item.techStack.map(renderTechIcon)}</div>
+     <div style={{ overflow: "hidden", width: "100%", marginTop: 10 }}>
+  <div className="tech-carousel">
+    {item.techStack.map(renderTechIcon)}
+    {item.techStack.map(renderTechIcon)} {/* Duplicamos para que el loop sea infinito */}
+  </div>
+</div>
       <section style={{display:"flex", justifyContent:"center", marginTop:"auto", paddingBottom:"15px"}}>
       <div>
       <button
