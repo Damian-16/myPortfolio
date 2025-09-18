@@ -1,20 +1,11 @@
 import { toast } from "react-hot-toast";
 import { dynamicText } from "../styles/styles";
-import deliveryTrackerimg from "../assets/img/DeliveryTrackerImg.png";
-import batatabit from "../assets/img/Batatabit.JPG";
-import yard from "../assets/img/YardStore.png";
-import condaty from "../assets/img/CondatyWeb.JPG";
-import condatyR from "../assets/img/CondatyR.jpg";
-import condatyAdm from "../assets/img/CondatyAdm.jpeg";
-import fosAdmImage from "../assets/img/fosadmin.JPG";
-import elektaAppImage from "../assets/img/elektaApp.jpg";
-import elektaAdminImage from "../assets/img/elektaAdm.JPG";
 
 export const proyects = [
   {
     id: 1,
     title: "Condaty Admin",
-    previewImg: condatyAdm,
+    previewImg: new URL("../assets/img/CondatyAdm.jpeg", import.meta.url).href,
     description:
       "Aplicación de Condaty administrador, en esta web app mi mi trabajo tuvo que ver con la integración de nuevas funcionalidades, optimización del rendimiento y la mejora de la experiencia del usuario.",
     descriptionEn:
@@ -26,7 +17,7 @@ export const proyects = [
   {
     id: 2,
     title: "Condaty App",
-    previewImg: condatyR,
+    previewImg: new URL("../assets/img/CondatyR.jpg", import.meta.url).href,
     description:
       "Aplicación de Condaty,  Mi trabajo se centró principalmente en el desarrollo de interfaces modernas y responsivas para las aplicaciones web internas y externas, optimizando la experiencia del usuario, integrando componentes reutilizables y garantizando una navegación fluida entre módulos.",
     descriptionEn:
@@ -35,11 +26,10 @@ export const proyects = [
     gitHubLink: null,
     demoLink: "https://play.google.com/store/apps/details?id=com.rnowner",
   },
-
   {
     id: 3,
     title: "Condaty Web Page",
-    previewImg: condaty,
+    previewImg: new URL("../assets/img/CondatyWeb.JPG", import.meta.url).href,
     description:
       "La página web oficial de la aplicación Condaty, con toda la información pertinente, es responsiva y se encuentra actualmente en producción.",
     descriptionEn:
@@ -51,7 +41,7 @@ export const proyects = [
   {
     id: 4,
     title: "Fos Admin",
-    previewImg: fosAdmImage,
+    previewImg: new URL("../assets/img/fosadmin.JPG", import.meta.url).href,
     description:
       "Una página de administracion de clientes y medidas de métricas de ingresos y egresos, con autenticación de usuarios y roles.",
     descriptionEn:
@@ -63,7 +53,7 @@ export const proyects = [
   {
     id: 5,
     title: "Elekta App",
-    previewImg: elektaAppImage,
+    previewImg: new URL("../assets/img/elektaApp.jpg", import.meta.url).href,
     description:
       "Una aplicación móvil con funcionalidades de red social, en esta app mi trabajo fue desarrollar las interfaces de publicaciones,y chat en tiempo real , aplicando buenas prácticas de desarrollo y optimizando el rendimiento para una experiencia de usuario fluida.",
     descriptionEn:
@@ -76,7 +66,7 @@ export const proyects = [
   {
     id: 6,
     title: "Elekta Admin",
-    previewImg: elektaAdminImage,
+    previewImg: new URL("../assets/img/elektaAdm.JPG", import.meta.url).href,
     description:
       "Una página de administración de los usuarios de la app Elekta, en esta web app trabaje con funcionalidades de CRUD y gestión de roles y permisos.",
     descriptionEn:
@@ -88,39 +78,16 @@ export const proyects = [
   {
     id: 7,
     title: "Delivery Tracker",
-    previewImg: deliveryTrackerimg,
+    previewImg: new URL("../assets/img/DeliveryTrackerImg.png", import.meta.url)
+      .href,
     description:
       "Una aplicación de Rastreo y Delivery de productos,que brinda a los usuarios la posibilidad de realizar seguimiento de sus pedidos y disfrutar del servicio de entrega de los mismos. ,Actualmente esta desplegado en producción , por motivos de Mantenimientos del Servidor en este momento no se encuentra funcionando",
     descriptionEn:
-      "A Tracking and Delivery application for A Tracking and Delivery application for products, currently in production, which gives users the ability to track their orders and enjoy product delivery service,Currently in production, for reasons of Server Maintenance at this time it is not working",
+      "A Tracking and Delivery application for products, currently in production, which gives users the ability to track their orders and enjoy product delivery service,Currently in production, for reasons of Server Maintenance at this time it is not working",
     techStack: ["React", "Redux", "Typescript", "MySql", "Firebase"],
     gitHubLink: null,
     demoLink: "http://deliverytracker.softsytech.com/home",
   },
-  // {
-  //   id: 3,
-  //   title: "Yard Store",
-  //   previewImg: yard,
-  //   description:
-  //     "Una Tienda virtual con funcionalidad de agregar o quitar Productos de un carrito virtual, Host configurado con Firebase",
-  //   descriptionEn:
-  //     "A Virtual Store with functionality to add or remove Products from a virtual cart,\nHost configured with Firebase",
-  //   techStack: ["Angular", "Typescript", "Firebase"],
-  //   gitHubLink: "https://github.com/Damian-16/my-store-angular",
-  //   demoLink: "https://yarnstore-62ab6.web.app",
-  // },
-  // {
-  //   id: 4,
-  //   title: "Batatabit Page",
-  //   previewImg: batatabit,
-  //   description:
-  //     "Una landing page responsive diseñada para proporcionar información actualizada y relevante sobre el mercado de criptomonedas. Esta página web se adapta perfectamente a cualquier dispositivo, ofreciendo una experiencia de usuario óptima tanto en computadoras de escritorio como en tablets y teléfonos móviles.",
-  //   descriptionEn:
-  //     "A responsive landing page designed to provide up-to-date and relevant information about the cryptocurrency market. This website adapts perfectly to any device, offering an optimal user experience on desktop computers, tablets and mobile phones.",
-  //   techStack: ["Html", "Javascript", "Css"],
-  //   gitHubLink: "https://github.com/Damian-16/MobileFirst",
-  //   demoLink: "https://damian-16.github.io/MobileFirst/",
-  // },
 ];
 
 export const techIcons = [
