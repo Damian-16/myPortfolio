@@ -48,13 +48,21 @@ const Portfolio = ({ text, language, darkMode }) => {
       >
         {!language ? item.description : item.descriptionEn}
       </p>
-     <div style={{ overflow: "hidden", width: "90%", marginTop: 10 ,marginLeft:16,marginRight:16}}>
-  <div className="tech-carousel">
-    {item.techStack.map(renderTechIcon)}
-    {item.techStack.map(renderTechIcon)} {/* Duplicamos para que el loop sea infinito */}
-  </div>
+      <section style={{display:"flex", flexDirection:"column", marginTop:"auto", paddingBottom:"15px"}}>
+     <div style={{ overflow: "hidden", width: "90%", marginLeft:16,marginRight:16}}>
+
+  {item.techStack.length > 3 ? (
+    <div className="tech-carousel">
+      {item.techStack.map(renderTechIcon)}
+      {item.techStack.map(renderTechIcon)} {/* Duplicamos para loop infinito */}
+    </div>
+  ) : (
+    <div style={{ display: "flex", gap: 20, justifyContent: "center" }}>
+      {item.techStack.map(renderTechIcon)}
+    </div>
+  )}
+
 </div>
-      <section style={{display:"flex", justifyContent:"center", marginTop:"auto", paddingBottom:"15px"}}>
       <div>
       <button
         style={{ margin: 8 }}
