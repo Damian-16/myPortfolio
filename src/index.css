@@ -134,8 +134,9 @@ button:focus-visible {
 
 .tech-carousel {
   display: inline-flex;
+  cursor: pointer;
   gap: 20px;
-  animation: scrollTech 20s linear infinite;
+  animation: scrollTech 30s linear infinite;
 }
 
 @keyframes scrollTech {

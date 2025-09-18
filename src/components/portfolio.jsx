@@ -48,7 +48,7 @@ const Portfolio = ({ text, language, darkMode }) => {
       >
         {!language ? item.description : item.descriptionEn}
       </p>
-     <div style={{ overflow: "hidden", width: "100%", marginTop: 10 }}>
+     <div style={{ overflow: "hidden", width: "90%", marginTop: 10 ,marginLeft:16,marginRight:16}}>
   <div className="tech-carousel">
     {item.techStack.map(renderTechIcon)}
     {item.techStack.map(renderTechIcon)} {/* Duplicamos para que el loop sea infinito */}
