@@ -47,20 +47,22 @@ const Footer = ({text, darkMode}) => {
       <div style={styles.iconsWorks}>
         <img
           src={
-            "https://icon-library.com/images/linkedin-icon-no-background/linkedin-icon-no-background-8.jpg"
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu8pBeH_oRf2_gRydB1LAKc1cpojYZ990uiw&s"
           }
           alt={"lnkdnIcon"}
           style={styles.icons}
           onClick={()=>linksRedirect('https://www.linkedin.com/in/damian-pinedo-morganti/')}
         ></img>
-          <img
+          {/* <img
           src={
             "https://cdn-icons-png.flaticon.com/512/733/733579.png?w=740&t=st=1691007972~exp=1691008572~hmac=5b21e0dd1bf0935f7e2d6c2578d17e695f0d8096e8ac7d67aafc451b821259ff"
           }
           alt={"twitIcon"}
           style={styles.icons}
           onClick={()=>linksRedirect('https://twitter.com/DamianMorganti4')}
-        ></img>
+        >
+
+        </img> */}
 
 </div>
 <form style={{display:'flex',justifyContent: 'center',flexDirection: 'column',margin:10}} ref={form} onSubmit={sendEmail}>
