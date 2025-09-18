@@ -5,7 +5,7 @@ export const proyects = [
   {
     id: 1,
     title: "Condaty Admin",
-    previewImg: new URL("../assets/img/CondatyAdm.jpeg", import.meta.url).href,
+    previewImg: new URL("../assets/img/CondatyAdm.JPG", import.meta.url).href,
     description:
       "Aplicación de Condaty administrador, en esta web app mi mi trabajo tuvo que ver con la integración de nuevas funcionalidades, optimización del rendimiento y la mejora de la experiencia del usuario.",
     descriptionEn:
